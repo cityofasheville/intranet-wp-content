@@ -16,7 +16,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  * override those styles. If you'd rather start from scratch, you can comment out this
  * next line.
  */
-@import url("../flat-bootstrap/style.css");
+/*@import url("../flat-bootstrap/style.css");*/
 @import url("../../sass/styles.css");
 /* PUT YOUR CHANGED STYLES HERE 
  * 
