@@ -24,17 +24,6 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  * file, change what you want, and remove the lines that you didn't change.
 */
 
-/* Make the buttons square. This is just an example, remove it if you want. */
-.btn {
-	-webkit-border-radius: 0 !important;
-	-moz-border-radius: 0 !important;
-	border-radius: 0 !important;
-}
-
-/* Change the content header to dark blue. This is just an example. */
-.content-header {
-	background-color: #2980b9;
-}
 
 /* PUT ANY NEW STYLES TO USE IN YOUR CONTENT AREAS HERE SO YOU CAN EASILY PASTE THIS
  * SECTION IF YOU CHANGE THEMES
