@@ -1,0 +1,32 @@
+/* CSS Document */
+
+/* make modals usable */
+.firmasite-modal-static {
+	position: inherit !important; 
+	top: inherit !important; 
+	left: inherit !important; 
+	right: inherit !important; 
+	margin: 0 auto 20px !important; 
+	z-index: inherit !important; 
+	max-width: 100% !important;
+	word-wrap: break-word;
+	width:100% !important; 
+}
+
+.firmasite-modal-static .modal-footer {
+	border-radius: 6px;
+	text-align: inherit;
+}
+.firmasite-modal-static .bbp-reply-author {
+	text-align:center;
+} 
+.firmasite-modal-static .modal-body {
+	overflow-y: inherit !important; 
+	max-height: inherit;
+}
+.firmasite-modal-static .modal-body.alert {
+	margin-bottom: 0; 
+}
+
+/* Tinymce Bootstrap Fixes for wp-admin */
+body.mceContentBody { margin:10px!important;padding:10px!important;border:none!important }

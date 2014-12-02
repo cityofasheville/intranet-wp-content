@@ -1,0 +1,652 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FirmaSite Theme Enhancer v1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-08-24 17:55:34+0000\n"
+"Last-Translator: admin <unsalkorkmaz@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: theme-enhancer/functions/tinymce-buttons.php:36
+#: theme-enhancer/functions/tinymce-buttons.php:102
+#@ firmasite-theme-enhancer
+msgid "Icons"
+msgstr "Simgeler"
+
+#: theme-enhancer/functions/tinymce-buttons.php:37
+#@ firmasite-theme-enhancer
+msgid "Styles"
+msgstr "Stiller"
+
+#: theme-enhancer/functions/tinymce-buttons.php:38
+#@ firmasite-theme-enhancer
+msgid "Container"
+msgstr "Kutucuk"
+
+#: theme-enhancer/functions/tinymce-buttons.php:40
+#@ firmasite-theme-enhancer
+msgid "Well Box"
+msgstr "Standard Kutucuk"
+
+#: theme-enhancer/functions/tinymce-buttons.php:41
+#@ firmasite-theme-enhancer
+msgid "Small Well Box"
+msgstr "Standard Kutucuk (Küçük)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:42
+#@ firmasite-theme-enhancer
+msgid "Standard Well Box"
+msgstr "Standard Kutucuk (Normal)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:43
+#@ firmasite-theme-enhancer
+msgid "Large Well Box"
+msgstr "Standard Kutucuk (Büyük)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:45
+#@ firmasite-theme-enhancer
+msgid "Message Box"
+msgstr "Mesaj Kutuçukları"
+
+#: theme-enhancer/functions/tinymce-buttons.php:46
+#@ firmasite-theme-enhancer
+msgid "Alert Box"
+msgstr "Uyarı Kutucuğu"
+
+#: theme-enhancer/functions/tinymce-buttons.php:47
+#@ firmasite-theme-enhancer
+msgid "Alert Box (Danger)"
+msgstr "Uyarı Kutucuğu (Tehlike)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:48
+#@ firmasite-theme-enhancer
+msgid "Alert Box (Success)"
+msgstr "Uyarı Kutucuğu (Başarı)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:49
+#@ firmasite-theme-enhancer
+msgid "Alert Box (Information)"
+msgstr "Uyarı Kutucuğu (Bilgi)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:51
+#@ firmasite-theme-enhancer
+msgid "Modal Box"
+msgstr "Model Kutucuk"
+
+#: theme-enhancer/functions/tinymce-buttons.php:52
+#@ firmasite-theme-enhancer
+msgid "Modal Box (Header)"
+msgstr "Model Kutucuk (Başlık)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:53
+#@ firmasite-theme-enhancer
+msgid "Modal Box (Body)"
+msgstr "Model Kutucuk (Gövde)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:54
+#@ firmasite-theme-enhancer
+msgid "Modal Box (Footer)"
+msgstr "Model Kutucuk (Altlık)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:56
+#@ firmasite-theme-enhancer
+msgid "Text Styles"
+msgstr "Yazı Stilleri"
+
+#: theme-enhancer/functions/tinymce-buttons.php:58
+#@ firmasite-theme-enhancer
+msgid "Text Color"
+msgstr "Yazı Rengi"
+
+#: theme-enhancer/functions/tinymce-buttons.php:59
+#@ firmasite-theme-enhancer
+msgid "Muted"
+msgstr "Sessiz"
+
+#: theme-enhancer/functions/tinymce-buttons.php:60
+#: theme-enhancer/functions/tinymce-buttons.php:86
+#@ firmasite-theme-enhancer
+msgid "Alert"
+msgstr "Uyarı"
+
+#: theme-enhancer/functions/tinymce-buttons.php:61
+#: theme-enhancer/functions/tinymce-buttons.php:87
+#@ firmasite-theme-enhancer
+msgid "Danger"
+msgstr "Tehlike"
+
+#: theme-enhancer/functions/tinymce-buttons.php:62
+#: theme-enhancer/functions/tinymce-buttons.php:88
+#@ firmasite-theme-enhancer
+msgid "Success"
+msgstr "Başarı"
+
+#: theme-enhancer/functions/tinymce-buttons.php:63
+#: theme-enhancer/functions/tinymce-buttons.php:89
+#@ firmasite-theme-enhancer
+msgid "Information"
+msgstr "Bilgi"
+
+#: theme-enhancer/functions/tinymce-buttons.php:65
+#: theme-enhancer/functions/tinymce-buttons.php:66
+#@ firmasite-theme-enhancer
+msgid "Label"
+msgstr "Etiket"
+
+#: theme-enhancer/functions/tinymce-buttons.php:67
+#@ firmasite-theme-enhancer
+msgid "Label (Warning)"
+msgstr "Etiket (Uyarı)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:68
+#@ firmasite-theme-enhancer
+msgid "Label (Important)"
+msgstr "Etiket (Önemli)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:69
+#@ firmasite-theme-enhancer
+msgid "Label (Success)"
+msgstr "Etiket (Başarı)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:70
+#@ firmasite-theme-enhancer
+msgid "Label (Info)"
+msgstr "Etiket (Bilgi)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:73
+#: theme-enhancer/functions/tinymce-buttons.php:74
+#@ firmasite-theme-enhancer
+msgid "Badge"
+msgstr "Rozet"
+
+#: theme-enhancer/functions/tinymce-buttons.php:75
+#@ firmasite-theme-enhancer
+msgid "Badge (Warning)"
+msgstr "Rozet (Uyarı)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:76
+#@ firmasite-theme-enhancer
+msgid "Badge (Important)"
+msgstr "Rozet (Önemli)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:77
+#@ firmasite-theme-enhancer
+msgid "Badge (Success)"
+msgstr "Rozet (Başarı)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:78
+#@ firmasite-theme-enhancer
+msgid "Badge (Info)"
+msgstr "Rozet (Bilgi)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:81
+#@ firmasite-theme-enhancer
+msgid "Link to Button"
+msgstr "Düğme"
+
+#: theme-enhancer/functions/tinymce-buttons.php:83
+#@ firmasite-theme-enhancer
+msgid "Button Color"
+msgstr "Düğme Rengi"
+
+#: theme-enhancer/functions/tinymce-buttons.php:84
+#: theme-enhancer/functions/tinymce-buttons.php:95
+#@ firmasite-theme-enhancer
+msgid "Standard"
+msgstr "Normal"
+
+#: theme-enhancer/functions/tinymce-buttons.php:85
+#: theme-enhancer/functions/tinymce-buttons.php:90
+#@ firmasite-theme-enhancer
+msgid "Primary"
+msgstr "Birincil"
+
+#: theme-enhancer/functions/tinymce-buttons.php:92
+#@ firmasite-theme-enhancer
+msgid "Button Size"
+msgstr "Düğme Boyutu"
+
+#: theme-enhancer/functions/tinymce-buttons.php:93
+#@ firmasite-theme-enhancer
+msgid "Block"
+msgstr "Tam Satır"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:178
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:127
+#: theme-enhancer/functions/tinymce-buttons.php:94
+#@ firmasite-theme-enhancer
+msgid "Large"
+msgstr "Büyük"
+
+#: theme-enhancer/functions/tinymce-buttons.php:96
+#@ firmasite-theme-enhancer
+msgid "Small"
+msgstr "Küçük"
+
+#: theme-enhancer/functions/tinymce-buttons.php:97
+#@ firmasite-theme-enhancer
+msgid "Mini"
+msgstr "Minik"
+
+#. translators: plugin header field 'Name'
+#: firmasite-plugin.php:0
+#: firmasite-plugin.php:19
+#@ firmasite-theme-enhancer
+msgid "FirmaSite Theme Enhancer"
+msgstr "FirmaSite Tema Güç Artırıcı"
+
+#. translators: plugin header field 'Description'
+#: firmasite-plugin.php:0
+#: firmasite-plugin.php:21
+#@ firmasite-theme-enhancer
+msgid "This plugin provides new features to themes. Twitter Bootstrap design elements, custom editor buttons and more.."
+msgstr "Bu eklenti temanıza yeni özellikler kazandırmaktadır. Özel tasarım elementleri, özel editör tuşları ve daha fazlası.."
+
+#. translators: plugin header field 'PluginURI'
+#: firmasite-plugin.php:0
+#@ firmasite-theme-enhancer
+msgid "http://firmasite.com"
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: firmasite-plugin.php:0
+#@ firmasite-theme-enhancer
+msgid "Ünsal Korkmaz"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: firmasite-plugin.php:0
+#@ firmasite-theme-enhancer
+msgid "http://unsalkorkmaz.com"
+msgstr ""
+
+#: theme-enhancer/functions/tinymce-buttons.php:71
+#@ firmasite-theme-enhancer
+msgid "Label (Primary)"
+msgstr "Etiket (Ana Renk)"
+
+#: theme-enhancer/functions/tinymce-buttons.php:79
+#@ firmasite-theme-enhancer
+msgid "Badge (Primary)"
+msgstr "Rozet (Ana renk)"
+
+#: widget-visibility/widget-conditions.php:39
+#@ firmasite-theme-enhancer
+msgid "All category pages"
+msgstr "Tüm kategori sayfaları"
+
+#: widget-visibility/widget-conditions.php:53
+#@ firmasite-theme-enhancer
+msgid "All author pages"
+msgstr "Tüm yazar sayfaları"
+
+#: widget-visibility/widget-conditions.php:64
+#@ firmasite-theme-enhancer
+msgid "All tag pages"
+msgstr "Tüm etiket sayfaları"
+
+#: widget-visibility/widget-conditions.php:78
+#@ firmasite-theme-enhancer
+msgid "All date archives"
+msgstr "Tüm tarih arşivleri"
+
+#: widget-visibility/widget-conditions.php:79
+#@ firmasite-theme-enhancer
+msgid "Daily archives"
+msgstr "Günlük arşivler"
+
+#: widget-visibility/widget-conditions.php:80
+#@ firmasite-theme-enhancer
+msgid "Monthly archives"
+msgstr "Aylık Arşivler"
+
+#: widget-visibility/widget-conditions.php:81
+#@ firmasite-theme-enhancer
+msgid "Yearly archives"
+msgstr "Yıllık Arşivler"
+
+#: widget-visibility/widget-conditions.php:92
+#@ firmasite-theme-enhancer
+msgid "Front page"
+msgstr "Ana Sayfa"
+
+#: widget-visibility/widget-conditions.php:93
+#@ firmasite-theme-enhancer
+msgid "Posts page"
+msgstr "Yazı sayfası"
+
+#: widget-visibility/widget-conditions.php:95
+#@ firmasite-theme-enhancer
+msgid "404 error page"
+msgstr "404 hata sayfası"
+
+#: widget-visibility/widget-conditions.php:96
+#@ firmasite-theme-enhancer
+msgid "Search results"
+msgstr "Arama Sonuçları"
+
+#: widget-visibility/widget-conditions.php:97
+#@ firmasite-theme-enhancer
+msgid "Post type:"
+msgstr "Yazı Türü:"
+
+#: widget-visibility/widget-conditions.php:110
+#@ firmasite-theme-enhancer
+msgid "Static page:"
+msgstr "Statik sayfa:"
+
+#: widget-visibility/widget-conditions.php:178
+#@ firmasite-theme-enhancer
+msgid "Visibility"
+msgstr "Görünürlük"
+
+#: widget-visibility/widget-conditions.php:181
+#, php-format
+#@ firmasite-theme-enhancer
+msgctxt "placeholder: dropdown menu to select widget visibility; hide if or show if"
+msgid "%s if:"
+msgstr "%s eğer:"
+
+#: widget-visibility/widget-conditions.php:181
+#, php-format
+#@ firmasite-theme-enhancer
+msgctxt "Used in the \"%s if:\" translation for the widget visibility dropdown"
+msgid "Show"
+msgstr "Göster"
+
+#: widget-visibility/widget-conditions.php:181
+#, php-format
+#@ firmasite-theme-enhancer
+msgctxt "Used in the \"%s if:\" translation for the widget visibility dropdown"
+msgid "Hide"
+msgstr "Gizle"
+
+#: widget-visibility/widget-conditions.php:192
+#@ firmasite-theme-enhancer
+msgctxt "Used as the default option in a dropdown list"
+msgid "-- Select --"
+msgstr "-- Seç --"
+
+#: widget-visibility/widget-conditions.php:193
+#@ firmasite-theme-enhancer
+msgid "Category"
+msgstr "Kategori"
+
+#: widget-visibility/widget-conditions.php:194
+#@ firmasite-theme-enhancer
+msgctxt "Noun, as in: \"The author of this post is...\""
+msgid "Author"
+msgstr "Yazar"
+
+#: widget-visibility/widget-conditions.php:195
+#@ firmasite-theme-enhancer
+msgctxt "Noun, as in: \"This post has one tag.\""
+msgid "Tag"
+msgstr "Etiket"
+
+#: widget-visibility/widget-conditions.php:196
+#@ firmasite-theme-enhancer
+msgctxt "Noun, as in: \"This page is a date archive.\""
+msgid "Date"
+msgstr "Tarih"
+
+#: widget-visibility/widget-conditions.php:197
+#@ firmasite-theme-enhancer
+msgctxt "Example: The user is looking at a page, not a post."
+msgid "Page"
+msgstr "Sayfa"
+
+#: widget-visibility/widget-conditions.php:202
+#@ firmasite-theme-enhancer
+msgctxt "Widget Visibility: {Rule Major [Page]} is {Rule Minor [Search results]}"
+msgid "is"
+msgstr "şu ise:"
+
+#: widget-visibility/widget-conditions.php:203
+#@ firmasite-theme-enhancer
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: widget-visibility/widget-conditions.php:209
+#@ firmasite-theme-enhancer
+msgctxt "Shown between widget visibility conditions."
+msgid "or"
+msgstr "ya da"
+
+#: widget-visibility/widget-conditions.php:211
+#@ firmasite-theme-enhancer
+msgid "Delete"
+msgstr "Sil"
+
+#: widget-visibility/widget-conditions.php:211
+#@ firmasite-theme-enhancer
+msgid "Add"
+msgstr "Ekle"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:43
+#: simple-image-widget1/includes/class-simple-image-widget.php:43
+#@ firmasite-theme-enhancer
+msgid "Image"
+msgstr "Resim"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:252
+#: simple-image-widget1/includes/class-simple-image-widget.php:235
+#@ firmasite-theme-enhancer
+msgid "Title:"
+msgstr "Başlık:"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:259
+#: simple-image-widget1/includes/class-simple-image-widget.php:242
+#@ firmasite-theme-enhancer
+msgid "Update Image"
+msgstr "Resmi Güncelle"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:258
+#: simple-image-widget/includes/class-simple-image-widget.php:268
+#: simple-image-widget1/includes/class-simple-image-widget.php:241
+#: simple-image-widget1/includes/class-simple-image-widget.php:251
+#@ firmasite-theme-enhancer
+msgid "Choose an Image"
+msgstr "Resim Seç"
+
+#: simple-image-widget/includes/class-simple-image-widget-legacy.php:108
+#: simple-image-widget1/includes/class-simple-image-widget-legacy.php:108
+#@ firmasite-theme-enhancer
+msgid "These fields are here to maintain your data from an earlier version."
+msgstr "Bu bölümler önceki versionlardaki verileriniz için burada."
+
+#: simple-image-widget/includes/class-simple-image-widget-legacy.php:111
+#: simple-image-widget1/includes/class-simple-image-widget-legacy.php:111
+#@ firmasite-theme-enhancer
+msgid "Select an image, then clear these values, and they will disappear when you save the widget."
+msgstr "Bir resim seçin ve bu verileri temizleyin. Bileşeni kaydettiğinizde kaybolacaklardır."
+
+#: simple-image-widget/includes/class-simple-image-widget-legacy.php:116
+#: simple-image-widget1/includes/class-simple-image-widget-legacy.php:116
+#@ firmasite-theme-enhancer
+msgid "Image URL:"
+msgstr "Resim bağlantı adresi (URL):"
+
+#: simple-image-widget/includes/class-simple-image-widget-legacy.php:120
+#: simple-image-widget1/includes/class-simple-image-widget-legacy.php:120
+#@ firmasite-theme-enhancer
+msgid "Alternate Text:"
+msgstr "Alternatif Yazı:"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:280
+#: simple-image-widget1/includes/class-simple-image-widget.php:263
+#@ firmasite-theme-enhancer
+msgid "Size:"
+msgstr "Boyut:"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:300
+#: simple-image-widget1/includes/class-simple-image-widget.php:283
+#@ firmasite-theme-enhancer
+msgid "Link:"
+msgstr "Bağlantı:"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:306
+#: simple-image-widget1/includes/class-simple-image-widget.php:289
+#@ firmasite-theme-enhancer
+msgid "Open in new window?"
+msgstr "Yeni pencerede açılsın mı?"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:324
+#: simple-image-widget1/includes/class-simple-image-widget.php:298
+#@ firmasite-theme-enhancer
+msgid "Link Text:"
+msgstr "Bağlantı yazısı:"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:333
+#: simple-image-widget1/includes/class-simple-image-widget.php:307
+#@ firmasite-theme-enhancer
+msgid "Text:"
+msgstr "Yazı:"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:89
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:179
+#: simple-image-widget/includes/class-simple-image-widget.php:457
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:87
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:128
+#: simple-image-widget1/includes/class-simple-image-widget.php:394
+#@ firmasite-theme-enhancer
+msgid "Full Size"
+msgstr "Tam boy"
+
+#. translators: plugin header field 'Name'
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:112
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "Simple Image Widget"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "https://wordpress.org/extend/plugins/simple-image-widget/"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "A simple image widget utilizing the new WordPress media manager."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "Blazer Six"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "http://www.blazersix.com/"
+msgstr ""
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:87
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:85
+#@ firmasite-theme-enhancer
+msgid "Choose an Attachment"
+msgstr "Bir ortam dosyası seçin"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:88
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:86
+#@ firmasite-theme-enhancer
+msgid "Update Attachment"
+msgstr "Ortam Dosyasını Güncelle"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:176
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:125
+#@ firmasite-theme-enhancer
+msgid "Thumbnail"
+msgstr "Küçük resim"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:177
+#: simple-image-widget1/includes/class-simple-image-widget-plugin.php:126
+#@ firmasite-theme-enhancer
+msgid "Medium"
+msgstr "Orta"
+
+#. translators: plugin header field 'Version'
+#: firmasite-plugin.php:0
+#@ firmasite-theme-enhancer
+msgid "1.3.0"
+msgstr ""
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:115
+#@ firmasite-theme-enhancer
+msgid "Image Size"
+msgstr "Resim Boyutu"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:116
+#@ firmasite-theme-enhancer
+msgid "Link"
+msgstr "Bağlantı"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:117
+#@ firmasite-theme-enhancer
+msgid "Link Classes"
+msgstr "Bağlantı html class'ları"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:118
+#@ firmasite-theme-enhancer
+msgid "Link Text"
+msgstr "Bağlantı Yazısı"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:119
+#@ firmasite-theme-enhancer
+msgid "New Window"
+msgstr "Yeni Pencere"
+
+#: simple-image-widget/includes/class-simple-image-widget-plugin.php:120
+#@ firmasite-theme-enhancer
+msgid "Text"
+msgstr "Yazı"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:49
+#: simple-image-widget1/includes/class-simple-image-widget.php:49
+#@ firmasite-theme-enhancer
+msgid "An image from your Media Library."
+msgstr "Ortam Kütüphanenizden bir resim"
+
+#: simple-image-widget/includes/class-simple-image-widget.php:315
+#@ firmasite-theme-enhancer
+msgid "Link Classes:"
+msgstr "Bağlantı html class'ları:"
+
+#. translators: plugin header field 'Version'
+#: simple-image-widget1/simple-image-widget.php:0
+#@ firmasite-theme-enhancer
+msgid "4.0.0"
+msgstr ""
+
+#: widget-visibility/widget-conditions.php:94
+#@ firmasite-theme-enhancer
+msgid "Archive page"
+msgstr "Arşiv sayfası"
+
+#: widget-visibility/widget-conditions.php:121
+#@ firmasite-theme-enhancer
+msgid "All taxonomy pages"
+msgstr "Tüm sınıflandırma sayfaları"
+
+#: widget-visibility/widget-conditions.php:199
+#@ firmasite-theme-enhancer
+msgctxt "Noun, as in: \"This post has one taxonomy.\""
+msgid "Taxonomy"
+msgstr "Sınıflandırma (Taksonomi)"
+

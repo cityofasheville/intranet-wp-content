@@ -1,0 +1,6 @@
+
+1. After first line @font-face, added;
+@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family: 'FontAwesome';src: url('fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');}}
+
+2. font-family !important in;
+[class^="icon-"],[class*=" icon-"]
