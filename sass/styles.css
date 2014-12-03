@@ -214,10 +214,10 @@ input, button, select, textarea {
   line-height: inherit; }
 
 a {
-  color: #3498DB;
+  color: #2C3E50;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #3498DB;
+    color: #2C3E50;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1668,7 +1668,7 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .input
     background-color: #fff; }
 
 .btn-link {
-  color: #3498DB;
+  color: #2C3E50;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -1679,7 +1679,7 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .input
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #3498DB;
+    color: #2C3E50;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -2108,7 +2108,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #ecf0f1;
-    border-color: #3498DB; }
+    border-color: #2C3E50; }
   .nav .nav-divider {
     height: 1px;
     margin: 9.5px 0;
@@ -2771,7 +2771,7 @@ a.badge:hover, a.badge:focus {
     color: #18BC9C; }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-  border-color: #3498DB; }
+  border-color: #2C3E50; }
 
 .alert {
   padding: 15px;
