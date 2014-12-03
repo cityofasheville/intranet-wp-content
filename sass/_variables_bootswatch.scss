@@ -27,10 +27,10 @@ $brand-danger:          #E74C3C !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $brand-success !default;
+$text-color:            $brand-info !default;
 
 //** Global textual link color.
-$link-color:            $brand-info !default;
+$link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $link-color !default;
 
