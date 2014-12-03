@@ -17,7 +17,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  * next line.
  */
 /*@import url("../flat-bootstrap/style.css");*/
-@import url("../../sass/styles.css");
+
 /* PUT YOUR CHANGED STYLES HERE 
  * 
  * The best way to do this is to copy in the relevant section from the parent's style.css
@@ -28,3 +28,8 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 /* PUT ANY NEW STYLES TO USE IN YOUR CONTENT AREAS HERE SO YOU CAN EASILY PASTE THIS
  * SECTION IF YOU CHANGE THEMES
  */
+
+
+ /*Import our own Sass bootstrap to overide the theme*/
+@import url("../../sass/styles.css");
+
