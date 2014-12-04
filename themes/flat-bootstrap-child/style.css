@@ -33,4 +33,8 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  /*Import our own Sass bootstrap to overide the theme*/
 @import url("../../sass/styles.css");
 
+.content-header{
+	background-color: #34495e;
+}
+
 
