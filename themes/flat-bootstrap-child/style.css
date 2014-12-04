@@ -31,5 +31,6 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 
 
  /*Import our own Sass bootstrap to overide the theme*/
-/*@import url("../../sass/styles.css");*/
+@import url("../../sass/styles.css");
+
 

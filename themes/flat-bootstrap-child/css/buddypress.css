@@ -1,0 +1,2 @@
+ /*Import our own Sass bootstrap to overide the theme*/
+@import url("../../../sass/buddypress.css");

@@ -52,7 +52,16 @@ gulp.task('default', function () {
 
 //Compiles SASS to dev/styles.css and dist/styles.css
 gulp.task('styles', function () {
-  	return gulp.src('sass/*.scss')
+  	return gulp.src('sass/styles.scss')
+	    .pipe(sass({style: 'expanded'}))
+	    .on('error', handleError)
+	    .pipe(gulp.dest('sass'))
+	    .pipe(size());
+});
+
+//Compiles SASS to dev/styles.css and dist/styles.css
+gulp.task('buddypress', function () {
+  	return gulp.src('sass/buddypress.scss')
 	    .pipe(sass({style: 'expanded'}))
 	    .on('error', handleError)
 	    .pipe(gulp.dest('sass'))
