@@ -233,8 +233,8 @@ function xsbf_scripts() {
 
 	// Add font-awesome support	
 	if ( isset ( $xsbf_theme_options['fontawesome'] ) AND $xsbf_theme_options['fontawesome'] ) {
-		wp_register_style('font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.0.3', 'all' );
-		wp_enqueue_style( 'font-awesome');
+		// wp_register_style('font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.2.0', 'all' );
+		// wp_enqueue_style( 'font-awesome');
 	}
 
 	// This theme's stylesheet, which contains the theme-specific CSS for coloring

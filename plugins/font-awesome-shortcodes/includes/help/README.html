@@ -1,0 +1,166 @@
+<h1 id="font-awesome-shortcodes-for-wordpress">Font Awesome Shortcodes for WordPress</h1>
+<p>This is a plugin for WordPress that adds shortcodes for easier use of the Font Awesome icons in your content.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This plugin won&#39;t do anything if you don&#39;t have WordPress theme built with <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. <strong>The plugin does not include Font Awesome</strong>.</p>
+<p>The plugin is tested to work with <code>Font Awesome version 4.2</code> and <code>WordPress 4.0</code>.</p>
+<h2 id="shortcode-reference">Shortcode Reference</h2>
+<ul>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#icon-stacks">Icon Stacks</a></li>
+<li><a href="#icon-lists">Icon Lists</a></li>
+</ul>
+<h3 id="usage">Usage</h3>
+<h3 id="icons">Icons</h3>
+<pre><code>[fa type=&quot;exclamation&quot;]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Required</th>
+<th>Values</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>The type of icon you want to display</td>
+<td>required</td>
+<td>See Font Awesome docs</td>
+<td>none</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Icon size</td>
+<td>optional</td>
+<td>lg, 2x 3x, 4x, 5x</td>
+<td>false</td>
+</tr>
+<tr>
+<td>border</td>
+<td>Whether the font is displayed using the &quot;bordered&quot; style</td>
+<td>optional</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>spin</td>
+<td>Whether the font is displayed spinning</td>
+<td>optional</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>list_item</td>
+<td>Set &quot;true&quot; if the icon is within a list item for better spacing. Be sure to wrap the list in [fa-ul] (see below)</td>
+<td>optional</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>fixed_width</td>
+<td>Set &quot;true&quot; if the icon should keep a fixed width for spacing in a menu</td>
+<td>optional</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>rotate</td>
+<td>Rotate the icon a number of degrees</td>
+<td>optional</td>
+<td>normal, 90, 180, 270</td>
+<td>false</td>
+</tr>
+<tr>
+<td>flip</td>
+<td>Flip the icon vertically or horizontally</td>
+<td>optional</td>
+<td>vertical, horizontal</td>
+<td>false</td>
+</tr>
+<tr>
+<td>stack_size</td>
+<td>If this icon is in a stack, what size is it?</td>
+<td>optional</td>
+<td>lg, 2x 3x, 4x, 5x</td>
+<td>false</td>
+</tr>
+<tr>
+<td>inverse</td>
+<td>Whether this icon&#39;s color should be inverted (useful in stacks)</td>
+<td>optional</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>xclass</td>
+<td>Any extra classes you want to add</td>
+<td>optional</td>
+<td>any text</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Icon Reference</a>.</p>
+<hr>
+<h3 id="icon-stacks">Icon Stacks</h3>
+<pre><code>[fa-stack size=&quot;lg&quot;] 
+    [fa type=&quot;circle&quot; stack_size=&quot;2x&quot;]
+    [fa type=&quot;flag&quot; inverse=&quot;true&quot; stack_size=&quot;1x&quot;]
+[/fa-stack]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Required</th>
+<th>Values</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>Icon size</td>
+<td>optional</td>
+<td>lg, 2x 3x, 4x, 5x</td>
+<td>false</td>
+</tr>
+<tr>
+<td>xclass</td>
+<td>Any extra classes you want to add</td>
+<td>optional</td>
+<td>any text</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://fortawesome.github.io/Font-Awesome/examples/">Font Awesome documentation</a>.</p>
+<hr>
+<h3 id="icon-lists">Icon Lists</h3>
+<p>When using <code>list_item=&quot;true&quot;</code> for icons, be sure to wrap the list in <code>[fa-ul]</code> and <code>[/fa-ul]</code>.</p>
+<pre><code>[fa-ul] 
+    Standard HTML or WordPress list goes here.
+[/fa-ul]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Required</th>
+<th>Values</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xclass</td>
+<td>Any extra classes you want to add</td>
+<td>optional</td>
+<td>any text</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://fortawesome.github.io/Font-Awesome/examples/">Font Awesome documentation</a>.</p>

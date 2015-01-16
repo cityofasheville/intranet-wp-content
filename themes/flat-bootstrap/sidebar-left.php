@@ -7,7 +7,7 @@
  * @package flat-bootstrap
  */
 ?>
-	<div id="secondary" class="widget-area col-md-4 col-md-pull-8" role="complementary">
+	<div id="secondary" class="widget-area col-md-3 col-md-pull-9" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'Sidebar' ) ) : ?>
 

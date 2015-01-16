@@ -1,0 +1,5 @@
+{
+    "wiki_settings": "a:6:{s:4:\"slug\";s:4:\"wiki\";s:20:\"breadcrumbs_in_title\";i:0;s:9:\"wiki_name\";s:5:\"Wikis\";s:13:\"sub_wiki_name\";s:9:\"Sub Wikis\";s:17:\"sub_wiki_order_by\";s:10:\"menu_order\";s:14:\"sub_wiki_order\";s:3:\"ASC\";}",
+    "wiki_version": "1.2.5.1",
+    ".label": "wiki"
+}
