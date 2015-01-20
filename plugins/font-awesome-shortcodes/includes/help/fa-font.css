@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'bss4wp';
+	src:url('fonts/Bootstrap-Shortcodes-for-WordPress.eot?-o1r0ap');
+	src:url('fonts/Bootstrap-Shortcodes-for-WordPress.eot?#iefix-o1r0ap') format('embedded-opentype'),
+		url('fonts/Bootstrap-Shortcodes-for-WordPress.woff?-o1r0ap') format('woff'),
+		url('fonts/Bootstrap-Shortcodes-for-WordPress.ttf?-o1r0ap') format('truetype'),
+		url('fonts/Bootstrap-Shortcodes-for-WordPress.svg?-o1r0ap#Bootstrap-Shortcodes-for-WordPress') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fa_font-awesome-logo {
+    padding: 0 3px;
+}
+.fa_font-awesome-logo:before,
+.mce-i-fontawesome-shortcodes:before {
+    font-family: 'bss4wp' !important;
+	content: "\e601" !important;
+    color: #1fa67a !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#wp_fs_fontawesome-shortcodes {
+    font-size: 14px !important;
+}

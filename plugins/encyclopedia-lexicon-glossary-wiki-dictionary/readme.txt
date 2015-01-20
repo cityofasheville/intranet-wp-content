@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
 Requires at least: 3.6
-Tested up to: 4.0.1
+Tested up to: 4.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 License: GPLv2
@@ -186,6 +186,26 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 
 == Changelog ==
+
+= 1.5.20 =
+* Rewritten cross linker
+* Rewritten options data handler
+* Patched default theme styles
+
+= 1.5.19 =
+* Added styles for Twenty Fifteen
+* Tested with WordPress 4.1
+
+= 1.5.18 =
+* Fixed: Prefixfilter does not give any output if there are no filters
+* Fixed: Convert shortcode attributes to an array in every case
+
+= 1.5.17 =
+* Fixed: concatenated terms can auto linked now
+* Permalinks will be rewritten on plugin acitvation now
+
+= 1.5.16 =
+* Fixed options page meta box handlers
 
 = 1.5.15 =
 * Added arguments filter for Get_Tag_Related_Terms()

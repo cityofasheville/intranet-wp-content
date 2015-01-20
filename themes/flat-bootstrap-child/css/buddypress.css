@@ -1,2 +1,2072 @@
- /*Import our own Sass bootstrap to overide the theme*/
-@import url("../../../sass/buddypress.css");
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700,400italic");
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  line-height: inherit;
+  color: #2f2f2f;
+  border: 0;
+  border-bottom: 1px solid transparent; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold; }
+
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal; }
+
+input[type="file"] {
+  display: block; }
+
+input[type="range"] {
+  display: block;
+  width: 100%; }
+
+select[multiple], select[size] {
+  height: auto; }
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #2f2f2f; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #2f2f2f;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  .form-control:focus {
+    border-color: #3887BE;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(56, 135, 190, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(56, 135, 190, 0.6); }
+  .form-control::-moz-placeholder {
+    color: #acb6c0;
+    opacity: 1; }
+  .form-control:-ms-input-placeholder {
+    color: #acb6c0; }
+  .form-control::-webkit-input-placeholder {
+    color: #acb6c0; }
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: not-allowed;
+    background-color: #ebebeb;
+    opacity: 1; }
+
+textarea.form-control {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+  line-height: 36px;
+  line-height: 1.42857 \0; }
+  input[type="date"].input-sm, .form-horizontal .form-group-sm input[type="date"].form-control, input[type="time"].input-sm, .form-horizontal .form-group-sm input[type="time"].form-control, input[type="datetime-local"].input-sm, .form-horizontal .form-group-sm input[type="datetime-local"].form-control, input[type="month"].input-sm, .form-horizontal .form-group-sm input[type="month"].form-control {
+    line-height: 35px; }
+  input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].form-control, input[type="time"].input-lg, .form-horizontal .form-group-lg input[type="time"].form-control, input[type="datetime-local"].input-lg, .form-horizontal .form-group-lg input[type="datetime-local"].form-control, input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"].form-control {
+    line-height: 49px; }
+
+.form-group {
+  margin-bottom: 15px; }
+
+.radio, .checkbox {
+  position: relative;
+  display: block;
+  min-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .radio label, .checkbox label {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer; }
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9; }
+
+.radio + .radio, .checkbox + .checkbox {
+  margin-top: -5px; }
+
+.radio-inline, .checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer; }
+
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; }
+
+input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"], input[type="checkbox"][disabled], input[type="checkbox"].disabled, fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed; }
+
+.radio-inline.disabled, fieldset[disabled] .radio-inline, .checkbox-inline.disabled, fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed; }
+
+.radio.disabled label, fieldset[disabled] .radio label, .checkbox.disabled label, fieldset[disabled] .checkbox label {
+  cursor: not-allowed; }
+
+.form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0; }
+  .form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control {
+    padding-left: 0;
+    padding-right: 0; }
+
+.input-sm, .form-horizontal .form-group-sm .form-control {
+  height: 35px;
+  padding: 6px 9px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px; }
+
+select.input-sm, .form-horizontal .form-group-sm select.form-control {
+  height: 35px;
+  line-height: 35px; }
+
+textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control, select[multiple].input-sm, .form-horizontal .form-group-sm select[multiple].form-control {
+  height: auto; }
+
+.input-lg, .form-horizontal .form-group-lg .form-control {
+  height: 49px;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 6px; }
+
+select.input-lg, .form-horizontal .form-group-lg select.form-control {
+  height: 49px;
+  line-height: 49px; }
+
+textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form-control {
+  height: auto; }
+
+.has-feedback {
+  position: relative; }
+  .has-feedback .form-control {
+    padding-right: 45px; }
+
+.form-control-feedback {
+  position: absolute;
+  top: 27px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center; }
+
+.input-lg + .form-control-feedback, .input-lg + .form-horizontal .form-group-lg .form-control, .form-horizontal .form-group-lg .input-lg + .form-control {
+  width: 49px;
+  height: 49px;
+  line-height: 49px; }
+
+.input-sm + .form-control-feedback, .input-sm + .form-horizontal .form-group-sm .form-control, .form-horizontal .form-group-sm .input-sm + .form-control {
+  width: 35px;
+  height: 35px;
+  line-height: 35px; }
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {
+  color: #fff; }
+.has-success .form-control {
+  border-color: #fff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-success .form-control:focus {
+    border-color: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.has-success .input-group-addon {
+  color: #fff;
+  border-color: #fff;
+  background-color: #18BC9C; }
+.has-success .form-control-feedback {
+  color: #fff; }
+
+.has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline {
+  color: #fff; }
+.has-warning .form-control {
+  border-color: #fff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-warning .form-control:focus {
+    border-color: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.has-warning .input-group-addon {
+  color: #fff;
+  border-color: #fff;
+  background-color: #F39C12; }
+.has-warning .form-control-feedback {
+  color: #fff; }
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+  color: #fff; }
+.has-error .form-control {
+  border-color: #fff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-error .form-control:focus {
+    border-color: #e6e6e6;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.has-error .input-group-addon {
+  color: #fff;
+  border-color: #fff;
+  background-color: #E74C3C; }
+.has-error .form-control-feedback {
+  color: #fff; }
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0; }
+
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #6f6f6f; }
+
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+    .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
+      width: auto; }
+  .form-inline .input-group > .form-control {
+    width: 100%; }
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .radio, .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+    .form-inline .radio label, .form-inline .checkbox label {
+      padding-left: 0; }
+  .form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+  .form-inline .has-feedback .form-control-feedback {
+    top: 0; } }
+
+.form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px; }
+.form-horizontal .radio, .form-horizontal .checkbox {
+  min-height: 29px; }
+.form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .form-horizontal .form-group:before, .form-horizontal .form-group:after {
+    content: " ";
+    display: table; }
+  .form-horizontal .form-group:after {
+    clear: both; }
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px; } }
+.form-horizontal .has-feedback .form-control-feedback {
+  top: 0;
+  right: 15px; }
+@media (min-width: 768px) {
+  .form-horizontal .form-group-lg .control-label {
+    padding-top: 14.3px; } }
+@media (min-width: 768px) {
+  .form-horizontal .form-group-sm .control-label {
+    padding-top: 7px; } }
+
+.navbar {
+  border-width: 0; }
+
+.navbar-default .badge {
+  background-color: #fff;
+  color: #f8f8f8; }
+
+.navbar-inverse .badge {
+  background-color: #fff;
+  color: #222; }
+
+.navbar-brand {
+  padding: 18.5px 15px 20.5px; }
+
+.btn:active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.text-primary, .text-primary:hover {
+  color: #3887BE; }
+
+.text-success, .text-success:hover {
+  color: #18BC9C; }
+
+.text-danger, .text-danger:hover {
+  color: #E74C3C; }
+
+.text-warning, .text-warning:hover {
+  color: #F39C12; }
+
+.text-info, .text-info:hover {
+  color: #2C3E50; }
+
+table a:not(.btn), .table a:not(.btn) {
+  text-decoration: underline; }
+table .success, table .warning, table .danger, table .info, .table .success, .table .warning, .table .danger, .table .info {
+  color: #fff; }
+  table .success a, table .warning a, table .danger a, table .info a, .table .success a, .table .warning a, .table .danger a, .table .info a {
+    color: #fff; }
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td, .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border: none; }
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+  border: 1px solid #ebebeb; }
+
+.form-control, input {
+  border-width: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .form-control:focus, input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline, .has-warning .form-control-feedback {
+  color: #F39C12; }
+.has-warning .form-control, .has-warning .form-control:focus {
+  border: 2px solid #F39C12; }
+.has-warning .input-group-addon {
+  border-color: #F39C12; }
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error .form-control-feedback {
+  color: #E74C3C; }
+.has-error .form-control, .has-error .form-control:focus {
+  border: 2px solid #E74C3C; }
+.has-error .input-group-addon {
+  border-color: #E74C3C; }
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success .form-control-feedback {
+  color: #18BC9C; }
+.has-success .form-control, .has-success .form-control:focus {
+  border: 2px solid #18BC9C; }
+.has-success .input-group-addon {
+  border-color: #18BC9C; }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  border-color: transparent; }
+
+.pager a, .pager a:hover {
+  color: #fff; }
+.pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+  background-color: #fff; }
+
+.close {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.4; }
+  .close:hover, .close:focus {
+    color: #fff;
+    opacity: 1; }
+
+.alert .alert-link {
+  color: #fff;
+  text-decoration: underline; }
+
+.progress {
+  height: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .progress .progress-bar {
+    font-size: 10px;
+    line-height: 10px; }
+
+.well {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.panel-default .close {
+  color: #2f2f2f; }
+
+.modal .close {
+  color: #2f2f2f; }
+
+.popover {
+  color: #2f2f2f; }
+
+/*--------------------------------------------------------------
+Hello, this is the BuddyPress Legacy stylesheet.
+
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Navigation
+	1.1 - Pagination
+2.0 - WordPress
+	2.1 - Images
+3.0 - BuddyPress
+	3.1 - Activity
+		3.1.1 - Activity Listing
+		3.1.2 - Activity Comments
+	3.2 - Toolbar
+	3.3 - Directories - Members, Groups, Blogs, Forums
+	3.4 - Error / Success Messages
+	3.5 - Forms
+	3.6 - Ajax Loading
+	3.7 - Topics and Tables - Forums and General
+	3.8 - Headers, Lists and Tabs - Activity, Groups, Blogs, Forums
+	3.9 - Private Messaging Threads
+	3.10 - Extended Profiles
+	3.11 - Widgets
+4.0 - Media Queries
+	4.1 - Smartphones Landscape
+	4.2 - Smartphones Portrait
+	4.3 - Smartphones - smaller screen sizes
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1 - Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.1 - Pagination
+--------------------------------------------------------------*/
+#buddypress div.pagination {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 90%;
+  margin: 0;
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px 0; }
+
+#buddypress div.pagination .pag-count {
+  float: left;
+  margin-left: 10px; }
+
+#buddypress div.pagination .pagination-links {
+  float: right;
+  margin-right: 10px; }
+
+#buddypress div.pagination .pagination-links span, #buddypress div.pagination .pagination-links a {
+  font-size: 90%;
+  padding: 0 5px; }
+
+#buddypress div.pagination .pagination-links a:hover {
+  font-weight: bold; }
+
+#buddypress noscript div.pagination {
+  margin-bottom: 15px; }
+
+#buddypress #nav-above {
+  display: none; }
+
+#buddypress .paged #nav-above {
+  display: block; }
+
+/*--------------------------------------------------------------
+2 - WordPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.1 - Images
+--------------------------------------------------------------*/
+#buddypress img.wp-smiley {
+  border: none !important;
+  clear: none !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+#buddypress .clear {
+  clear: left; }
+
+/*--------------------------------------------------------------
+3.0 - BuddyPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 - Activity
+--------------------------------------------------------------*/
+#buddypress #activity-stream {
+  margin-top: -5px; }
+
+#buddypress #activity-stream p {
+  margin: 5px 0; }
+
+#buddypress #item-body form#whats-new-form {
+  margin: 0;
+  padding: 0; }
+
+#buddypress .home-page form#whats-new-form {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+#buddypress form#whats-new-form #whats-new-avatar {
+  float: left; }
+
+#buddypress form#whats-new-form #whats-new-content {
+  margin-left: 55px;
+  padding: 0 0 20px 20px; }
+
+#buddypress form#whats-new-form p.activity-greeting {
+  line-height: 0.5em;
+  margin-bottom: 15px;
+  margin-left: 75px; }
+
+#buddypress form#whats-new-form textarea {
+  background: #fff;
+  color: #555;
+  font-family: inherit;
+  font-size: 90%;
+  height: 20px;
+  padding: 6px;
+  width: 98%; }
+
+body.no-js #buddypress form#whats-new-form textarea {
+  height: 50px; }
+
+#buddypress form#whats-new-form #whats-new-options select {
+  max-width: 200px;
+  margin-top: 12px; }
+
+#buddypress form#whats-new-form #whats-new-submit {
+  float: right;
+  margin-top: 12px; }
+
+#buddypress #whats-new-options {
+  overflow: auto;
+  min-height: 80px; }
+
+body.no-js #buddypress #whats-new-options {
+  height: auto; }
+
+#buddypress #whats-new:focus {
+  border-color: rgba(31, 179, 221, 0.9) !important;
+  outline-color: rgba(31, 179, 221, 0.9); }
+
+/*--------------------------------------------------------------
+3.1.1 - Activity Listing
+--------------------------------------------------------------*/
+#buddypress ul.activity-list li {
+  overflow: hidden;
+  padding: 15px 0 0;
+  list-style: none; }
+
+#buddypress .activity-list .activity-avatar {
+  float: left; }
+
+#buddypress ul.item-list.activity-list li.has-comments {
+  padding-bottom: 15px; }
+
+body.activity-permalink #buddypress ul.activity-list li.has-comments {
+  padding-bottom: 0; }
+
+#buddypress .activity-list li.mini {
+  position: relative; }
+
+#buddypress .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-list li.mini .activity-avatar img.FB_profile_pic {
+  height: 20px;
+  margin-left: 30px;
+  width: 20px; }
+
+#buddypress .activity-permalink .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-permalink .activity-list li.mini .activity-avatar img.FB_profile_pic {
+  height: auto;
+  margin-left: 0;
+  width: auto; }
+
+body.activity-permalink #buddypress .activity-list > li:first-child {
+  padding-top: 0; }
+
+#buddypress .activity-list li .activity-content {
+  position: relative; }
+
+#buddypress .activity-list li.mini .activity-content p {
+  margin: 0; }
+
+#buddypress .activity-list li.mini .activity-comments {
+  clear: both;
+  font-size: 120%; }
+
+body.activity-permalink #buddypress li.mini .activity-meta {
+  margin-top: 4px; }
+
+#buddypress .activity-list li .activity-inreplyto {
+  color: #888;
+  font-size: 80%; }
+
+#buddypress .activity-list li .activity-inreplyto > p {
+  margin: 0;
+  display: inline; }
+
+#buddypress .activity-list li .activity-inreplyto blockquote, #buddypress .activity-list li .activity-inreplyto div.activity-inner {
+  background: none;
+  border: none;
+  display: inline;
+  margin: 0;
+  overflow: hidden;
+  padding: 0; }
+
+#buddypress .activity-list .activity-content {
+  margin: 0 0 0 70px; }
+
+body.activity-permalink #buddypress .activity-list li .activity-content {
+  border: none;
+  font-size: 100%;
+  line-height: 150%;
+  margin-left: 170px;
+  margin-right: 0;
+  padding: 0; }
+
+body.activity-permalink #buddypress .activity-list li .activity-header > p {
+  margin: 0;
+  padding: 5px 0 0 0; }
+
+#buddypress .activity-list .activity-content .activity-header, #buddypress .activity-list .activity-content .comment-header {
+  color: #888;
+  line-height: 220%; }
+
+#buddypress .activity-header {
+  margin-right: 20px; }
+
+#buddypress .activity-header a, #buddypress .comment-meta a, #buddypress .acomment-meta a {
+  text-decoration: none; }
+
+#buddypress .activity-list .activity-content .activity-header img.avatar {
+  float: none !important;
+  margin: 0 5px -8px 0 !important; }
+
+#buddypress a.bp-secondary-action, #buddypress span.highlight {
+  font-size: 80%;
+  padding: 0;
+  margin-right: 5px;
+  text-decoration: none; }
+
+#buddypress .activity-list .activity-content .activity-inner, #buddypress .activity-list .activity-content blockquote {
+  margin: 10px 10px 5px 0;
+  overflow: hidden; }
+
+#buddypress .activity-list li.new_forum_post .activity-content .activity-inner, #buddypress .activity-list li.new_forum_topic .activity-content .activity-inner {
+  border-left: 2px solid #EAEAEA;
+  margin-left: 5px;
+  padding-left: 10px; }
+
+body.activity-permalink #buddypress .activity-content .activity-inner, body.activity-permalink #buddypress .activity-content blockquote {
+  margin-left: 0;
+  margin-top: 5px; }
+
+#buddypress .activity-inner > p {
+  word-wrap: break-word; }
+
+#buddypress .activity-inner > .activity-inner {
+  margin: 0; }
+
+#buddypress .activity-inner > blockquote {
+  margin: 0; }
+
+#buddypress .activity-list .activity-content img.thumbnail {
+  border: 2px solid #eee;
+  float: left;
+  margin: 0 10px 5px 0; }
+
+#buddypress .activity-read-more {
+  margin-left: 1em;
+  white-space: nowrap; }
+
+#buddypress .activity-list li.load-more, #buddypress .activity-list li.load-newest {
+  background: #f0f0f0;
+  font-size: 110%;
+  margin: 15px 0;
+  padding: 10px 15px;
+  text-align: center; }
+
+#buddypress .activity-list li.load-more a, #buddypress .activity-list li.load-newest a {
+  color: #4D4D4D; }
+
+/*--------------------------------------------------------------
+3.1.2 - Activity Comments
+--------------------------------------------------------------*/
+#buddypress div.activity-meta {
+  margin: 18px 0 0; }
+
+body.activity-permalink #buddypress div.activity-meta {
+  margin-bottom: 6px; }
+
+#buddypress div.activity-meta a {
+  padding: 4px 8px; }
+
+#buddypress a.activity-time-since {
+  color: #aaa;
+  text-decoration: none; }
+
+#buddypress a.activity-time-since:hover {
+  color: #888;
+  text-decoration: underline; }
+
+#buddypress a.bp-primary-action, #buddypress #reply-title small a {
+  font-size: 80%;
+  margin-right: 5px;
+  text-decoration: none; }
+
+#buddypress a.bp-primary-action span, #buddypress #reply-title small a span {
+  background: #eee;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #999;
+  display: inline;
+  font-size: 70%;
+  margin-left: 2px;
+  padding: 3px 6px;
+  text-align: center;
+  vertical-align: middle; }
+
+#buddypress div.activity-comments {
+  margin: 0 0 0 70px;
+  overflow: hidden;
+  /* IE fix */
+  position: relative;
+  width: auto;
+  clear: both; }
+
+body.activity-permalink #buddypress div.activity-comments {
+  background: none;
+  margin-left: 170px;
+  width: auto; }
+
+#buddypress div.activity-comments > ul {
+  padding: 0 0 0 10px; }
+
+#buddypress div.activity-comments ul, #buddypress div.activity-comments ul li {
+  border: none;
+  list-style: none; }
+
+#buddypress div.activity-comments ul {
+  clear: both;
+  margin: 0; }
+
+#buddypress div.activity-comments ul li {
+  border-top: 1px solid #eee;
+  padding: 10px 0 0; }
+
+body.activity-permalink #buddypress .activity-list li.mini .activity-comments {
+  clear: none;
+  margin-top: 0; }
+
+body.activity-permalink #buddypress div.activity-comments ul li {
+  border-width: 1px;
+  padding: 10px 0 0 0; }
+
+#buddypress div.activity-comments > ul > li:first-child {
+  border-top: none; }
+
+#buddypress div.activity-comments ul li:last-child {
+  margin-bottom: 0; }
+
+#buddypress div.activity-comments ul li > ul {
+  margin-left: 30px;
+  margin-top: 0;
+  padding-left: 10px; }
+
+body.activity-permalink #buddypress div.activity-comments ul li > ul {
+  margin-top: 10px; }
+
+body.activity-permalink #buddypress div.activity-comments > ul {
+  padding: 0 10px 0 15px; }
+
+#buddypress div.activity-comments div.acomment-avatar img {
+  border-width: 1px;
+  float: left;
+  height: 25px;
+  margin-right: 10px;
+  width: 25px; }
+
+#buddypress div.activity-comments div.acomment-content {
+  font-size: 80%;
+  margin: 5px 0 0 40px; }
+
+#buddypress div.acomment-content .time-since, #buddypress div.acomment-content .activity-delete-link, #buddypress div.acomment-content .comment-header {
+  display: none; }
+
+body.activity-permalink #buddypress div.activity-comments div.acomment-content {
+  font-size: 90%; }
+
+#buddypress div.activity-comments div.acomment-meta {
+  color: #888;
+  font-size: 80%; }
+
+#buddypress div.activity-comments form.ac-form {
+  display: none;
+  padding: 10px; }
+
+#buddypress div.activity-comments li form.ac-form {
+  margin-right: 15px;
+  clear: both; }
+
+#buddypress div.activity-comments form.root {
+  margin-left: 0; }
+
+#buddypress div.activity-comments div#message {
+  margin-top: 15px;
+  margin-bottom: 0; }
+
+#buddypress div.activity-comments form .ac-textarea {
+  background: #fff;
+  border: 1px inset #ccc;
+  margin-bottom: 10px;
+  padding: 8px; }
+
+#buddypress div.activity-comments form textarea {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  color: #555;
+  font-family: inherit;
+  font-size: 100%;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+#buddypress div.activity-comments form input {
+  margin-top: 5px; }
+
+#buddypress div.activity-comments form div.ac-reply-avatar {
+  float: left; }
+
+#buddypress div.ac-reply-avatar img {
+  border: 1px solid #eee; }
+
+#buddypress div.activity-comments form div.ac-reply-content {
+  color: #888;
+  margin-left: 50px;
+  padding-left: 15px; }
+
+#buddypress div.activity-comments form div.ac-reply-content a {
+  text-decoration: none; }
+
+#buddypress .acomment-options {
+  float: left;
+  margin: 5px 0 5px 40px; }
+
+#buddypress .acomment-options a {
+  color: #999; }
+
+#buddypress .acomment-options a:hover {
+  color: inherit; }
+
+/*--------------------------------------------------------------
+3.3 - Directories - Members, Groups, Blogs, Forums
+--------------------------------------------------------------*/
+#buddypress div.dir-search {
+  float: right; }
+
+#buddypress .dir-form {
+  clear: both; }
+
+/*--------------------------------------------------------------
+3.4 - Errors / Success Messages
+--------------------------------------------------------------*/
+#buddypress div#message {
+  margin: 0 0 15px; }
+
+#buddypress #message.info {
+  margin-bottom: 0; }
+
+#buddypress div#message.updated {
+  clear: both; }
+
+#buddypress div#message p, #sitewide-notice p {
+  font-size: 90%;
+  display: block;
+  padding: 10px 15px; }
+
+#buddypress div#message.error p {
+  background-color: #fdc;
+  border: 1px solid #a00;
+  clear: left;
+  color: #800; }
+
+#buddypress div#message.updated p {
+  background-color: #efc;
+  border: 1px solid #591;
+  color: #250; }
+
+#buddypress #pass-strength-result {
+  background-color: #eee;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  text-align: center;
+  width: 150px; }
+
+#buddypress .standard-form #basic-details-section #pass-strength-result {
+  width: 35%; }
+
+#buddypress #pass-strength-result.error, #buddypress #pass-strength-result.bad {
+  background-color: #ffb78c;
+  border-color: #ff853c !important;
+  display: block; }
+
+#buddypress #pass-strength-result.good {
+  background-color: #ffec8b;
+  border-color: #fc0 !important;
+  display: block; }
+
+#buddypress #pass-strength-result.short {
+  background-color: #ffa0a0;
+  border-color: #f04040 !important;
+  display: block; }
+
+#buddypress #pass-strength-result.strong {
+  background-color: #c3ff88;
+  border-color: #8dff1c !important;
+  display: block; }
+
+#buddypress .standard-form#signup_form div div.error {
+  background: #faa;
+  color: #a00;
+  margin: 0 0 10px 0;
+  padding: 6px;
+  width: 90%; }
+
+#buddypress div.accept, #buddypress div.reject {
+  float: left;
+  margin-left: 10px; }
+
+#buddypress ul.button-nav li {
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none; }
+
+#buddypress ul.button-nav li.current a {
+  font-weight: bold; }
+
+#sitewide-notice #message {
+  left: 2%;
+  position: fixed;
+  top: 1em;
+  width: 96%;
+  z-index: 9999; }
+
+#sitewide-notice.admin-bar-on #message {
+  top: 3.3em; }
+
+#sitewide-notice strong {
+  display: block;
+  margin-bottom: -1em; }
+
+/*--------------------------------------------------------------
+3.5 - Forms
+--------------------------------------------------------------*/
+#buddypress textarea, #buddypress input[type=text], #buddypress input[type=text], #buddypress input[type=color], #buddypress input[type=date], #buddypress input[type=datetime], #buddypress input[type=datetime-local], #buddypress input[type=email], #buddypress input[type=month], #buddypress input[type=number], #buddypress input[type=range], #buddypress input[type=search], #buddypress input[type=tel], #buddypress input[type=time], #buddypress input[type=url], #buddypress input[type=week], #buddypress select, #buddypress input[type=password], #buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text] {
+  display: inline;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #2f2f2f;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  #buddypress textarea:focus, #buddypress input[type=text]:focus, #buddypress input[type=text]:focus, #buddypress input[type=color]:focus, #buddypress input[type=date]:focus, #buddypress input[type=datetime]:focus, #buddypress input[type=datetime-local]:focus, #buddypress input[type=email]:focus, #buddypress input[type=month]:focus, #buddypress input[type=number]:focus, #buddypress input[type=range]:focus, #buddypress input[type=search]:focus, #buddypress input[type=tel]:focus, #buddypress input[type=time]:focus, #buddypress input[type=url]:focus, #buddypress input[type=week]:focus, #buddypress select:focus, #buddypress input[type=password]:focus, #buddypress .dir-search input[type=search]:focus, #buddypress .dir-search input[type=text]:focus, #buddypress .groups-members-search input[type=search]:focus, #buddypress .groups-members-search input[type=text]:focus {
+    border-color: #3887BE;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(56, 135, 190, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(56, 135, 190, 0.6); }
+  #buddypress textarea::-moz-placeholder, #buddypress input[type=text]::-moz-placeholder, #buddypress input[type=text]::-moz-placeholder, #buddypress input[type=color]::-moz-placeholder, #buddypress input[type=date]::-moz-placeholder, #buddypress input[type=datetime]::-moz-placeholder, #buddypress input[type=datetime-local]::-moz-placeholder, #buddypress input[type=email]::-moz-placeholder, #buddypress input[type=month]::-moz-placeholder, #buddypress input[type=number]::-moz-placeholder, #buddypress input[type=range]::-moz-placeholder, #buddypress input[type=search]::-moz-placeholder, #buddypress input[type=tel]::-moz-placeholder, #buddypress input[type=time]::-moz-placeholder, #buddypress input[type=url]::-moz-placeholder, #buddypress input[type=week]::-moz-placeholder, #buddypress select::-moz-placeholder, #buddypress input[type=password]::-moz-placeholder, #buddypress .dir-search input[type=search]::-moz-placeholder, #buddypress .dir-search input[type=text]::-moz-placeholder, #buddypress .groups-members-search input[type=search]::-moz-placeholder, #buddypress .groups-members-search input[type=text]::-moz-placeholder {
+    color: #acb6c0;
+    opacity: 1; }
+  #buddypress textarea:-ms-input-placeholder, #buddypress input[type=text]:-ms-input-placeholder, #buddypress input[type=text]:-ms-input-placeholder, #buddypress input[type=color]:-ms-input-placeholder, #buddypress input[type=date]:-ms-input-placeholder, #buddypress input[type=datetime]:-ms-input-placeholder, #buddypress input[type=datetime-local]:-ms-input-placeholder, #buddypress input[type=email]:-ms-input-placeholder, #buddypress input[type=month]:-ms-input-placeholder, #buddypress input[type=number]:-ms-input-placeholder, #buddypress input[type=range]:-ms-input-placeholder, #buddypress input[type=search]:-ms-input-placeholder, #buddypress input[type=tel]:-ms-input-placeholder, #buddypress input[type=time]:-ms-input-placeholder, #buddypress input[type=url]:-ms-input-placeholder, #buddypress input[type=week]:-ms-input-placeholder, #buddypress select:-ms-input-placeholder, #buddypress input[type=password]:-ms-input-placeholder, #buddypress .dir-search input[type=search]:-ms-input-placeholder, #buddypress .dir-search input[type=text]:-ms-input-placeholder, #buddypress .groups-members-search input[type=search]:-ms-input-placeholder, #buddypress .groups-members-search input[type=text]:-ms-input-placeholder {
+    color: #acb6c0; }
+  #buddypress textarea::-webkit-input-placeholder, #buddypress input[type=text]::-webkit-input-placeholder, #buddypress input[type=text]::-webkit-input-placeholder, #buddypress input[type=color]::-webkit-input-placeholder, #buddypress input[type=date]::-webkit-input-placeholder, #buddypress input[type=datetime]::-webkit-input-placeholder, #buddypress input[type=datetime-local]::-webkit-input-placeholder, #buddypress input[type=email]::-webkit-input-placeholder, #buddypress input[type=month]::-webkit-input-placeholder, #buddypress input[type=number]::-webkit-input-placeholder, #buddypress input[type=range]::-webkit-input-placeholder, #buddypress input[type=search]::-webkit-input-placeholder, #buddypress input[type=tel]::-webkit-input-placeholder, #buddypress input[type=time]::-webkit-input-placeholder, #buddypress input[type=url]::-webkit-input-placeholder, #buddypress input[type=week]::-webkit-input-placeholder, #buddypress select::-webkit-input-placeholder, #buddypress input[type=password]::-webkit-input-placeholder, #buddypress .dir-search input[type=search]::-webkit-input-placeholder, #buddypress .dir-search input[type=text]::-webkit-input-placeholder, #buddypress .groups-members-search input[type=search]::-webkit-input-placeholder, #buddypress .groups-members-search input[type=text]::-webkit-input-placeholder {
+    color: #acb6c0; }
+  #buddypress textarea[disabled], #buddypress textarea[readonly], fieldset[disabled] #buddypress textarea, #buddypress input[type=text][disabled], #buddypress input[type=text][readonly], fieldset[disabled] #buddypress input[type=text], #buddypress input[type=text][disabled], #buddypress input[type=text][readonly], fieldset[disabled] #buddypress input[type=text], #buddypress input[type=color][disabled], #buddypress input[type=color][readonly], fieldset[disabled] #buddypress input[type=color], #buddypress input[type=date][disabled], #buddypress input[type=date][readonly], fieldset[disabled] #buddypress input[type=date], #buddypress input[type=datetime][disabled], #buddypress input[type=datetime][readonly], fieldset[disabled] #buddypress input[type=datetime], #buddypress input[type=datetime-local][disabled], #buddypress input[type=datetime-local][readonly], fieldset[disabled] #buddypress input[type=datetime-local], #buddypress input[type=email][disabled], #buddypress input[type=email][readonly], fieldset[disabled] #buddypress input[type=email], #buddypress input[type=month][disabled], #buddypress input[type=month][readonly], fieldset[disabled] #buddypress input[type=month], #buddypress input[type=number][disabled], #buddypress input[type=number][readonly], fieldset[disabled] #buddypress input[type=number], #buddypress input[type=range][disabled], #buddypress input[type=range][readonly], fieldset[disabled] #buddypress input[type=range], #buddypress input[type=search][disabled], #buddypress input[type=search][readonly], fieldset[disabled] #buddypress input[type=search], #buddypress input[type=tel][disabled], #buddypress input[type=tel][readonly], fieldset[disabled] #buddypress input[type=tel], #buddypress input[type=time][disabled], #buddypress input[type=time][readonly], fieldset[disabled] #buddypress input[type=time], #buddypress input[type=url][disabled], #buddypress input[type=url][readonly], fieldset[disabled] #buddypress input[type=url], #buddypress input[type=week][disabled], #buddypress input[type=week][readonly], fieldset[disabled] #buddypress input[type=week], #buddypress select[disabled], #buddypress select[readonly], fieldset[disabled] #buddypress select, #buddypress input[type=password][disabled], #buddypress input[type=password][readonly], fieldset[disabled] #buddypress input[type=password], #buddypress .dir-search input[type=search][disabled], #buddypress .dir-search input[type=search][readonly], fieldset[disabled] #buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text][disabled], #buddypress .dir-search input[type=text][readonly], fieldset[disabled] #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search][disabled], #buddypress .groups-members-search input[type=search][readonly], fieldset[disabled] #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text][disabled], #buddypress .groups-members-search input[type=text][readonly], fieldset[disabled] #buddypress .groups-members-search input[type=text] {
+    cursor: not-allowed;
+    background-color: #ebebeb;
+    opacity: 1; }
+
+#buddypress .standard-form input[type=password] {
+  margin-bottom: 5px; }
+
+#buddypress .standard-form label, #buddypress .standard-form span.label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  width: auto; }
+
+#buddypress .standard-form div.checkbox label:nth-child(n+2), #buddypress .standard-form div.radio div label {
+  color: #888;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 5px 0 0 0; }
+
+#buddypress .standard-form#sidebar-login-form label {
+  margin-top: 5px; }
+
+#buddypress .standard-form input[type=text] {
+  width: 75%; }
+
+#buddypress .standard-form#sidebar-login-form input[type=text], #buddypress .standard-form#sidebar-login-form input[type=password] {
+  padding: 4px;
+  width: 95%; }
+
+#buddypress .standard-form #basic-details-section input[type=password], #buddypress .standard-form #blog-details-section input#signup_blog_url {
+  width: 35%; }
+
+#buddypress .standard-form#signup_form input[type=text], #buddypress .standard-form#signup_form textarea, #buddypress .form-allowed-tags, #buddypress #commentform input[type=text], #buddypress #commentform textarea {
+  width: 90%; }
+
+#buddypress .standard-form#signup_form div.submit {
+  float: right; }
+
+#buddypress div#signup-avatar img {
+  margin: 0 15px 10px 0; }
+
+#buddypress .standard-form textarea {
+  width: 75%;
+  height: 120px; }
+
+#buddypress .standard-form textarea#message_content {
+  height: 200px; }
+
+#buddypress .standard-form#send-reply textarea {
+  width: 97.5%; }
+
+#buddypress .standard-form p.description {
+  color: #888;
+  font-size: 80%;
+  margin: 5px 0; }
+
+#buddypress .standard-form div.submit {
+  clear: both;
+  padding: 15px 0 0 0; }
+
+#buddypress .standard-form p.submit {
+  margin-bottom: 0;
+  padding: 15px 0 0 0; }
+
+#buddypress .standard-form div.submit input {
+  margin-right: 15px; }
+
+#buddypress .standard-form div.radio ul {
+  margin: 10px 0 15px 38px;
+  list-style: disc; }
+
+#buddypress .standard-form div.radio ul li {
+  margin-bottom: 5px; }
+
+#buddypress .standard-form a.clear-value {
+  display: block;
+  margin-top: 5px;
+  outline: none; }
+
+#buddypress .standard-form #basic-details-section, #buddypress .standard-form #blog-details-section, #buddypress .standard-form #profile-details-section {
+  float: left;
+  width: 48%; }
+
+#buddypress .standard-form #profile-details-section {
+  float: right; }
+
+#buddypress .standard-form #blog-details-section {
+  clear: left; }
+
+#buddypress .standard-form input:focus, #buddypress .standard-form textarea:focus, #buddypress .standard-form select:focus {
+  background: #fafafa;
+  color: #555; }
+
+#buddypress form#send-invite-form {
+  margin-top: 20px; }
+
+#buddypress div#invite-list {
+  background: #f5f5f5;
+  height: 400px;
+  margin: 0 0 10px;
+  overflow: auto;
+  padding: 5px;
+  width: 160px; }
+
+#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  #buddypress button:focus, #buddypress button:active:focus, #buddypress button.active:focus, #buddypress a.button:focus, #buddypress a.button:active:focus, #buddypress a.button.active:focus, #buddypress input[type=submit]:focus, #buddypress input[type=submit]:active:focus, #buddypress input[type=submit].active:focus, #buddypress input[type=button]:focus, #buddypress input[type=button]:active:focus, #buddypress input[type=button].active:focus, #buddypress input[type=reset]:focus, #buddypress input[type=reset]:active:focus, #buddypress input[type=reset].active:focus, #buddypress ul.button-nav li a:focus, #buddypress ul.button-nav li a:active:focus, #buddypress ul.button-nav li a.active:focus, #buddypress div.generic-button a:focus, #buddypress div.generic-button a:active:focus, #buddypress div.generic-button a.active:focus, #buddypress .comment-reply-link:focus, #buddypress .comment-reply-link:active:focus, #buddypress .comment-reply-link.active:focus, a.bp-title-button:focus, a.bp-title-button:active:focus, a.bp-title-button.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  #buddypress button:hover, #buddypress button:focus, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=submit]:hover, #buddypress input[type=submit]:focus, #buddypress input[type=button]:hover, #buddypress input[type=button]:focus, #buddypress input[type=reset]:hover, #buddypress input[type=reset]:focus, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li a:focus, #buddypress div.generic-button a:hover, #buddypress div.generic-button a:focus, #buddypress .comment-reply-link:hover, #buddypress .comment-reply-link:focus, a.bp-title-button:hover, a.bp-title-button:focus {
+    color: #fff;
+    text-decoration: none; }
+  #buddypress button:active, #buddypress button.active, #buddypress a.button:active, #buddypress a.button.active, #buddypress input[type=submit]:active, #buddypress input[type=submit].active, #buddypress input[type=button]:active, #buddypress input[type=button].active, #buddypress input[type=reset]:active, #buddypress input[type=reset].active, #buddypress ul.button-nav li a:active, #buddypress ul.button-nav li a.active, #buddypress div.generic-button a:active, #buddypress div.generic-button a.active, #buddypress .comment-reply-link:active, #buddypress .comment-reply-link.active, a.bp-title-button:active, a.bp-title-button.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  #buddypress button.disabled, #buddypress button[disabled], fieldset[disabled] #buddypress button, #buddypress a.button.disabled, #buddypress a.button[disabled], fieldset[disabled] #buddypress a.button, #buddypress input[type=submit].disabled, #buddypress input[type=submit][disabled], fieldset[disabled] #buddypress input[type=submit], #buddypress input[type=button].disabled, #buddypress input[type=button][disabled], fieldset[disabled] #buddypress input[type=button], #buddypress input[type=reset].disabled, #buddypress input[type=reset][disabled], fieldset[disabled] #buddypress input[type=reset], #buddypress ul.button-nav li a.disabled, #buddypress ul.button-nav li a[disabled], fieldset[disabled] #buddypress ul.button-nav li a, #buddypress div.generic-button a.disabled, #buddypress div.generic-button a[disabled], fieldset[disabled] #buddypress div.generic-button a, #buddypress .comment-reply-link.disabled, #buddypress .comment-reply-link[disabled], fieldset[disabled] #buddypress .comment-reply-link, a.bp-title-button.disabled, a.bp-title-button[disabled], fieldset[disabled] a.bp-title-button {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+  color: #fff;
+  background-color: #3887BE;
+  border-color: #3b8ec5; }
+  #buddypress button:hover, #buddypress button:focus, #buddypress button:active, #buddypress button.active, .open > #buddypress button.dropdown-toggle, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress a.button:active, #buddypress a.button.active, .open > #buddypress a.button.dropdown-toggle, #buddypress input[type=submit]:hover, #buddypress input[type=submit]:focus, #buddypress input[type=submit]:active, #buddypress input[type=submit].active, .open > #buddypress input[type=submit].dropdown-toggle, #buddypress input[type=button]:hover, #buddypress input[type=button]:focus, #buddypress input[type=button]:active, #buddypress input[type=button].active, .open > #buddypress input[type=button].dropdown-toggle, #buddypress input[type=reset]:hover, #buddypress input[type=reset]:focus, #buddypress input[type=reset]:active, #buddypress input[type=reset].active, .open > #buddypress input[type=reset].dropdown-toggle, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li a:focus, #buddypress ul.button-nav li a:active, #buddypress ul.button-nav li a.active, .open > #buddypress ul.button-nav li a.dropdown-toggle, #buddypress div.generic-button a:hover, #buddypress div.generic-button a:focus, #buddypress div.generic-button a:active, #buddypress div.generic-button a.active, .open > #buddypress div.generic-button a.dropdown-toggle, #buddypress .comment-reply-link:hover, #buddypress .comment-reply-link:focus, #buddypress .comment-reply-link:active, #buddypress .comment-reply-link.active, .open > #buddypress .comment-reply-link.dropdown-toggle, a.bp-title-button:hover, a.bp-title-button:focus, a.bp-title-button:active, a.bp-title-button.active, .open > a.bp-title-button.dropdown-toggle {
+    color: #fff;
+    background-color: #2c6c97;
+    border-color: #2a668f; }
+  #buddypress button:active, #buddypress button.active, .open > #buddypress button.dropdown-toggle, #buddypress a.button:active, #buddypress a.button.active, .open > #buddypress a.button.dropdown-toggle, #buddypress input[type=submit]:active, #buddypress input[type=submit].active, .open > #buddypress input[type=submit].dropdown-toggle, #buddypress input[type=button]:active, #buddypress input[type=button].active, .open > #buddypress input[type=button].dropdown-toggle, #buddypress input[type=reset]:active, #buddypress input[type=reset].active, .open > #buddypress input[type=reset].dropdown-toggle, #buddypress ul.button-nav li a:active, #buddypress ul.button-nav li a.active, .open > #buddypress ul.button-nav li a.dropdown-toggle, #buddypress div.generic-button a:active, #buddypress div.generic-button a.active, .open > #buddypress div.generic-button a.dropdown-toggle, #buddypress .comment-reply-link:active, #buddypress .comment-reply-link.active, .open > #buddypress .comment-reply-link.dropdown-toggle, a.bp-title-button:active, a.bp-title-button.active, .open > a.bp-title-button.dropdown-toggle {
+    background-image: none; }
+  #buddypress button.disabled, #buddypress button.disabled:hover, #buddypress button.disabled:focus, #buddypress button.disabled:active, #buddypress button.disabled.active, #buddypress button[disabled], #buddypress button[disabled]:hover, #buddypress button[disabled]:focus, #buddypress button[disabled]:active, #buddypress button[disabled].active, fieldset[disabled] #buddypress button, fieldset[disabled] #buddypress button:hover, fieldset[disabled] #buddypress button:focus, fieldset[disabled] #buddypress button:active, fieldset[disabled] #buddypress button.active, #buddypress a.button.disabled, #buddypress a.button.disabled:hover, #buddypress a.button.disabled:focus, #buddypress a.button.disabled:active, #buddypress a.button.disabled.active, #buddypress a.button[disabled], #buddypress a.button[disabled]:hover, #buddypress a.button[disabled]:focus, #buddypress a.button[disabled]:active, #buddypress a.button[disabled].active, fieldset[disabled] #buddypress a.button, fieldset[disabled] #buddypress a.button:hover, fieldset[disabled] #buddypress a.button:focus, fieldset[disabled] #buddypress a.button:active, fieldset[disabled] #buddypress a.button.active, #buddypress input[type=submit].disabled, #buddypress input[type=submit].disabled:hover, #buddypress input[type=submit].disabled:focus, #buddypress input[type=submit].disabled:active, #buddypress input[type=submit].disabled.active, #buddypress input[type=submit][disabled], #buddypress input[type=submit][disabled]:hover, #buddypress input[type=submit][disabled]:focus, #buddypress input[type=submit][disabled]:active, #buddypress input[type=submit][disabled].active, fieldset[disabled] #buddypress input[type=submit], fieldset[disabled] #buddypress input[type=submit]:hover, fieldset[disabled] #buddypress input[type=submit]:focus, fieldset[disabled] #buddypress input[type=submit]:active, fieldset[disabled] #buddypress input[type=submit].active, #buddypress input[type=button].disabled, #buddypress input[type=button].disabled:hover, #buddypress input[type=button].disabled:focus, #buddypress input[type=button].disabled:active, #buddypress input[type=button].disabled.active, #buddypress input[type=button][disabled], #buddypress input[type=button][disabled]:hover, #buddypress input[type=button][disabled]:focus, #buddypress input[type=button][disabled]:active, #buddypress input[type=button][disabled].active, fieldset[disabled] #buddypress input[type=button], fieldset[disabled] #buddypress input[type=button]:hover, fieldset[disabled] #buddypress input[type=button]:focus, fieldset[disabled] #buddypress input[type=button]:active, fieldset[disabled] #buddypress input[type=button].active, #buddypress input[type=reset].disabled, #buddypress input[type=reset].disabled:hover, #buddypress input[type=reset].disabled:focus, #buddypress input[type=reset].disabled:active, #buddypress input[type=reset].disabled.active, #buddypress input[type=reset][disabled], #buddypress input[type=reset][disabled]:hover, #buddypress input[type=reset][disabled]:focus, #buddypress input[type=reset][disabled]:active, #buddypress input[type=reset][disabled].active, fieldset[disabled] #buddypress input[type=reset], fieldset[disabled] #buddypress input[type=reset]:hover, fieldset[disabled] #buddypress input[type=reset]:focus, fieldset[disabled] #buddypress input[type=reset]:active, fieldset[disabled] #buddypress input[type=reset].active, #buddypress ul.button-nav li a.disabled, #buddypress ul.button-nav li a.disabled:hover, #buddypress ul.button-nav li a.disabled:focus, #buddypress ul.button-nav li a.disabled:active, #buddypress ul.button-nav li a.disabled.active, #buddypress ul.button-nav li a[disabled], #buddypress ul.button-nav li a[disabled]:hover, #buddypress ul.button-nav li a[disabled]:focus, #buddypress ul.button-nav li a[disabled]:active, #buddypress ul.button-nav li a[disabled].active, fieldset[disabled] #buddypress ul.button-nav li a, fieldset[disabled] #buddypress ul.button-nav li a:hover, fieldset[disabled] #buddypress ul.button-nav li a:focus, fieldset[disabled] #buddypress ul.button-nav li a:active, fieldset[disabled] #buddypress ul.button-nav li a.active, #buddypress div.generic-button a.disabled, #buddypress div.generic-button a.disabled:hover, #buddypress div.generic-button a.disabled:focus, #buddypress div.generic-button a.disabled:active, #buddypress div.generic-button a.disabled.active, #buddypress div.generic-button a[disabled], #buddypress div.generic-button a[disabled]:hover, #buddypress div.generic-button a[disabled]:focus, #buddypress div.generic-button a[disabled]:active, #buddypress div.generic-button a[disabled].active, fieldset[disabled] #buddypress div.generic-button a, fieldset[disabled] #buddypress div.generic-button a:hover, fieldset[disabled] #buddypress div.generic-button a:focus, fieldset[disabled] #buddypress div.generic-button a:active, fieldset[disabled] #buddypress div.generic-button a.active, #buddypress .comment-reply-link.disabled, #buddypress .comment-reply-link.disabled:hover, #buddypress .comment-reply-link.disabled:focus, #buddypress .comment-reply-link.disabled:active, #buddypress .comment-reply-link.disabled.active, #buddypress .comment-reply-link[disabled], #buddypress .comment-reply-link[disabled]:hover, #buddypress .comment-reply-link[disabled]:focus, #buddypress .comment-reply-link[disabled]:active, #buddypress .comment-reply-link[disabled].active, fieldset[disabled] #buddypress .comment-reply-link, fieldset[disabled] #buddypress .comment-reply-link:hover, fieldset[disabled] #buddypress .comment-reply-link:focus, fieldset[disabled] #buddypress .comment-reply-link:active, fieldset[disabled] #buddypress .comment-reply-link.active, a.bp-title-button.disabled, a.bp-title-button.disabled:hover, a.bp-title-button.disabled:focus, a.bp-title-button.disabled:active, a.bp-title-button.disabled.active, a.bp-title-button[disabled], a.bp-title-button[disabled]:hover, a.bp-title-button[disabled]:focus, a.bp-title-button[disabled]:active, a.bp-title-button[disabled].active, fieldset[disabled] a.bp-title-button, fieldset[disabled] a.bp-title-button:hover, fieldset[disabled] a.bp-title-button:focus, fieldset[disabled] a.bp-title-button:active, fieldset[disabled] a.bp-title-button.active {
+    background-color: #3887BE;
+    border-color: #3887BE; }
+  #buddypress button .badge, #buddypress a.button .badge, #buddypress input[type=submit] .badge, #buddypress input[type=button] .badge, #buddypress input[type=reset] .badge, #buddypress ul.button-nav li a .badge, #buddypress div.generic-button a .badge, #buddypress .comment-reply-link .badge, a.bp-title-button .badge {
+    color: #3887BE;
+    background-color: #fff; }
+
+#buddypress form.standard-form .left-menu {
+  float: left; }
+
+#buddypress form.standard-form .left-menu #invite-list ul {
+  margin: 1%;
+  list-style: none; }
+
+#buddypress form.standard-form .left-menu #invite-list ul li {
+  margin: 0 0 0 1%; }
+
+#buddypress form.standard-form .main-column {
+  margin-left: 190px; }
+
+#buddypress form.standard-form .main-column ul#friend-list {
+  clear: none;
+  float: left; }
+
+#buddypress form.standard-form .main-column ul#friend-list h4 {
+  clear: none; }
+
+/* Overrides for embedded WP editors */
+#buddypress .wp-editor-wrap a.button, #buddypress .wp-editor-wrap button, #buddypress .wp-editor-wrap input[type=submit], #buddypress .wp-editor-wrap input[type=button], #buddypress .wp-editor-wrap input[type=reset] {
+  padding: 0 10px 1px; }
+
+/*--------------------------------------------------------------
+3.6 - Ajax Loading
+--------------------------------------------------------------*/
+#buddypress a.loading, #buddypress input.loading {
+  -webkit-animation: loader-pulsate 0.5s infinite ease-in-out alternate;
+  -moz-animation: loader-pulsate 0.5s infinite ease-in-out alternate;
+  border-color: #aaa; }
+
+@-webkit-keyframes loader-pulsate {
+  from {
+    border-color: #aaa;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    box-shadow: 0 0 6px #ccc; }
+
+  to {
+    border-color: #ccc;
+    -webkit-box-shadow: 0 0 6px #f8f8f8;
+    box-shadow: 0 0 6px #f8f8f8; } }
+
+@-moz-keyframes loader-pulsate {
+  from {
+    border-color: #aaa;
+    -moz-box-shadow: 0 0 6px #ccc;
+    box-shadow: 0 0 6px #ccc; }
+
+  to {
+    border-color: #ccc;
+    -moz-box-shadow: 0 0 6px #f8f8f8;
+    box-shadow: 0 0 6px #f8f8f8; } }
+
+#buddypress a.loading:hover, #buddypress input.loading:hover {
+  color: #777; }
+
+#buddypress input[type="submit"].pending, #buddypress input[type="button"].pending, #buddypress input[type="reset"].pending, #buddypress input[type="submit"].disabled, #buddypress input[type="button"].disabled, #buddypress input[type="reset"].disabled, #buddypress button.pending, #buddypress button.disabled, #buddypress div.pending a, #buddypress a.disabled {
+  border-color: #eee;
+  color: #bbb;
+  cursor: default; }
+
+#buddypress input[type="submit"]:hover.pending, #buddypress input[type="button"]:hover.pending, #buddypress input[type="reset"]:hover.pending, #buddypress input[type="submit"]:hover.disabled, #buddypress input[type="button"]:hover.disabled, #buddypress input[type="reset"]:hover.disabled, #buddypress button.pending:hover, #buddypress button.disabled:hover, #buddypress div.pending a:hover, #buddypress a.disabled:hover {
+  border-color: #eee;
+  color: #bbb; }
+
+/*--------------------------------------------------------------
+3.7 - Forums, Tables and Topics
+--------------------------------------------------------------*/
+#buddypress ul#topic-post-list {
+  margin: 0;
+  width: auto; }
+
+#buddypress ul#topic-post-list li {
+  padding: 15px;
+  position: relative; }
+
+#buddypress ul#topic-post-list li.alt {
+  background: #f5f5f5; }
+
+#buddypress ul#topic-post-list li div.poster-meta {
+  color: #888;
+  margin-bottom: 10px; }
+
+#buddypress ul#topic-post-list li div.post-content {
+  margin-left: 54px; }
+
+#buddypress div.topic-tags {
+  font-size: 80%; }
+
+#buddypress div.admin-links {
+  color: #888;
+  font-size: 80%;
+  position: absolute;
+  top: 15px;
+  right: 25px; }
+
+#buddypress div#topic-meta {
+  margin: 0;
+  padding: 5px 19px 30px;
+  position: relative; }
+
+#buddypress div#topic-meta div.admin-links {
+  right: 19px;
+  top: -36px; }
+
+#buddypress div#topic-meta h3 {
+  margin: 5px 0; }
+
+#buddypress div#new-topic-post {
+  display: none;
+  margin: 20px 0 0 0;
+  padding: 1px 0 0 0; }
+
+#buddypress table.notifications, #buddypress table.notifications-settings, #buddypress table.profile-settings, #buddypress table.profile-fields, #buddypress table.wp-profile-fields, #buddypress table.messages-notices, #buddypress table.forum {
+  width: 100%; }
+
+#buddypress table.notifications thead tr, #buddypress table.notifications-settings thead tr, #buddypress table.profile-settings thead tr, #buddypress table.profile-fields thead tr, #buddypress table.wp-profile-fields thead tr, #buddypress table.messages-notices thead tr, #buddypress table.forum thead tr {
+  background: #eaeaea; }
+
+#buddypress table#message-threads {
+  clear: both;
+  margin: 0;
+  width: auto; }
+
+#buddypress table.profile-fields {
+  margin-bottom: 20px; }
+
+#buddypress table.profile-fields:last-child {
+  margin-bottom: 0; }
+
+#buddypress table.profile-fields p {
+  margin: 0; }
+
+#buddypress table.profile-fields p:last-child {
+  margin-top: 0; }
+
+#buddypress table.notifications tr td, #buddypress table.notifications-settings tr td, #buddypress table.profile-settings tr td, #buddypress table.profile-fields tr td, #buddypress table.wp-profile-fields tr td, #buddypress table.messages-notices tr td, #buddypress table.forum tr td, #buddypress table.notifications tr th, #buddypress table.notifications-settings tr th, #buddypress table.profile-fields tr th, #buddypress table.wp-profile-fields tr th, #buddypress table.messages-notices tr th, #buddypress table.forum tr th {
+  padding: 8px;
+  vertical-align: middle; }
+
+#buddypress table.notifications tr td.label, #buddypress table.notifications-settings tr td.label, #buddypress table.profile-fields tr td.label, #buddypress table.wp-profile-fields tr td.label, #buddypress table.messages-notices tr td.label, #buddypress table.forum tr td.label {
+  border-right: 1px solid #eaeaea;
+  font-weight: bold;
+  width: 25%; }
+
+#buddypress table tr td.thread-info p {
+  margin: 0; }
+
+#buddypress table tr td.thread-info p.thread-excerpt {
+  color: #888;
+  font-size: 80%;
+  margin-top: 3px; }
+
+#buddypress table.forum td {
+  text-align: center; }
+
+#buddypress table.notifications tr.alt td, #buddypress table.notifications-settings tr.alt td, #buddypress table.profile-settings tr.alt td, #buddypress table.profile-fields tr.alt td, #buddypress table.wp-profile-fields tr.alt td, #buddypress table.messages-notices tr.alt td, #buddypress table.forum tr.alt td {
+  background: #f5f5f5; }
+
+#buddypress table.notification-settings {
+  margin-bottom: 20px;
+  text-align: left; }
+
+#buddypress #groups-notification-settings {
+  margin-bottom: 0; }
+
+#buddypress table.notifications th.icon, #buddypress table.notifications td:first-child, #buddypress table.notification-settings th.icon, #buddypress table.notification-settings td:first-child {
+  display: none; }
+
+#buddypress table.notification-settings th.title, #buddypress table.profile-settings th.title {
+  width: 80%; }
+
+#buddypress table.notification-settings .yes, #buddypress table.notification-settings .no {
+  text-align: center;
+  width: 40px; }
+
+#buddypress table.forum {
+  margin: 0;
+  width: auto;
+  clear: both; }
+
+#buddypress table.forum tr.sticky td {
+  font-size: 110%;
+  background: #fff9db;
+  border-top: 1px solid #ffe8c4;
+  border-bottom: 1px solid #ffe8c4; }
+
+#buddypress table.forum tr.closed td.td-title {
+  padding-left: 35px; }
+
+#buddypress table.forum td p.topic-text {
+  color: #888;
+  font-size: 100%; }
+
+#buddypress table.forum tr > td:first-child, #buddypress table.forum tr > th:first-child {
+  padding-left: 15px; }
+
+#buddypress table.forum tr > td:last-child, #buddypress table.forum tr > th:last-child {
+  padding-right: 15px; }
+
+#buddypress table.forum tr th#th-title, #buddypress table.forum tr th#th-poster, #buddypress table.forum tr th#th-group, #buddypress table.forum td.td-poster, #buddypress table.forum td.td-group, #buddypress table.forum td.td-title {
+  text-align: left; }
+
+#buddypress table.forum tr td.td-title a.topic-title {
+  font-size: 110%; }
+
+#buddypress table.forum td.td-freshness {
+  white-space: nowrap; }
+
+#buddypress table.forum td.td-freshness span.time-since {
+  font-size: 80%;
+  color: #888; }
+
+#buddypress table.forum td img.avatar {
+  float: none;
+  margin: 0 5px -8px 0; }
+
+#buddypress table.forum td.td-poster, #buddypress table.forum td.td-group {
+  min-width: 140px; }
+
+#buddypress table.forum th#th-title {
+  width: 80%; }
+
+#buddypress table.forum th#th-freshness {
+  width: 25%; }
+
+#buddypress table.forum th#th-postcount {
+  width: 15%; }
+
+#buddypress table.forum p.topic-meta {
+  font-size: 80%;
+  margin: 5px 0 0 0; }
+
+/*-------------------------------------------------------------------------
+3.8 - Headers, Lists and Tabs - Activity, Groups, Blogs, Forums, Profiles
+-------------------------------------------------------------------------*/
+#buddypress .item-body {
+  margin: 20px 0; }
+
+#buddypress span.activity {
+  display: inline-block;
+  font-size: 80%;
+  opacity: 0.8;
+  padding: 0; }
+
+#buddypress span.user-nicename {
+  color: #777;
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold; }
+
+#buddypress div#message p, #sitewide-notice p {
+  font-weight: normal;
+  margin-top: 3px;
+  text-decoration: none;
+  background-color: #ffd;
+  border: 1px solid #cb2;
+  color: #440; }
+
+#buddypress div#item-header {
+  overflow: hidden; }
+
+#buddypress div#item-header div#item-header-content {
+  float: left;
+  margin-left: 0; }
+
+#buddypress div#item-header h2 {
+  line-height: 120%;
+  margin: 0 0 15px 0; }
+
+#buddypress div#item-header h2 a {
+  color: #777;
+  text-decoration: none; }
+
+#buddypress div#item-header img.avatar {
+  float: left;
+  margin: 0 15px 19px 0; }
+
+#buddypress div#item-header h2 {
+  margin-bottom: 5px; }
+
+#buddypress div#item-header h2 span.highlight {
+  font-size: 60%;
+  font-weight: normal;
+  line-height: 170%;
+  vertical-align: middle;
+  display: inline-block; }
+
+#buddypress div#item-header h2 span.highlight span {
+  background: #a1dcfa;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 80%;
+  margin-bottom: 2px;
+  padding: 1px 4px;
+  position: relative;
+  right: -2px;
+  top: -2px;
+  vertical-align: middle; }
+
+#buddypress div#item-header div#item-meta {
+  font-size: 80%;
+  color: #aaa;
+  overflow: hidden;
+  margin: 15px 0 5px 0;
+  padding-bottom: 10px; }
+
+#buddypress div#item-header div#item-actions {
+  float: right;
+  margin: 0 0 15px 15px;
+  text-align: right;
+  width: 20%; }
+
+#buddypress div#item-header div#item-actions h3 {
+  margin: 0 0 5px 0; }
+
+#buddypress div#item-header ul {
+  margin-bottom: 15px;
+  overflow: hidden; }
+
+#buddypress div#item-header ul h5, #buddypress div#item-header ul span, #buddypress div#item-header ul hr {
+  display: none; }
+
+#buddypress div#item-header ul li {
+  float: right;
+  list-style: none; }
+
+#buddypress div#item-header ul img.avatar, #buddypress div#item-header ul.avatars img.avatar {
+  height: 30px;
+  margin: 2px;
+  width: 30px; }
+
+#buddypress div#item-header div.generic-button, #buddypress div#item-header a.button {
+  float: left;
+  margin: 10px 10px 0 0; }
+
+#buddypress div#item-header div#message.info {
+  line-height: 80%; }
+
+#buddypress ul.item-list {
+  border-top: 1px solid #eaeaea;
+  width: 100%;
+  list-style: none;
+  clear: both;
+  margin: 0;
+  padding: 0; }
+
+body.activity-permalink #buddypress ul.item-list, body.activity-permalink #buddypress ul.item-list li.activity-item {
+  border: none; }
+
+#buddypress ul.item-list li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0;
+  margin: 0;
+  position: relative;
+  list-style: none; }
+
+#buddypress ul.single-line li {
+  border: none; }
+
+#buddypress ul.item-list li img.avatar {
+  float: left;
+  margin: 0 10px 0 0; }
+
+#buddypress ul.item-list li div.item-title, #buddypress ul.item-list li h4 {
+  font-weight: normal;
+  font-size: 90%;
+  margin: 0;
+  width: 75%; }
+
+#buddypress ul.item-list li div.item-title span {
+  color: #999;
+  font-size: 80%; }
+
+#buddypress ul.item-list li div.item-desc {
+  color: #888;
+  font-size: 80%;
+  margin: 10px 0 0 60px;
+  width: 50%; }
+
+#buddypress ul.item-list li div.action {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  text-align: right; }
+
+#buddypress ul.item-list li div.meta {
+  color: #888;
+  font-size: 80%;
+  margin-top: 10px; }
+
+#buddypress ul.item-list li h5 span.small {
+  float: right;
+  font-size: 80%;
+  font-weight: normal; }
+
+#buddypress div.item-list-tabs {
+  background: transparent;
+  clear: left;
+  overflow: hidden; }
+
+#buddypress div.item-list-tabs ul {
+  margin: 0;
+  padding: 0; }
+
+#buddypress div.item-list-tabs ul li {
+  float: left;
+  margin: 0;
+  list-style: none; }
+
+#buddypress div.item-list-tabs#subnav ul li {
+  margin-top: 0; }
+
+#buddypress div.item-list-tabs ul li.last {
+  float: right;
+  margin: 7px 0 0; }
+
+#buddypress div.item-list-tabs#subnav ul li.last {
+  margin-top: 4px; }
+
+#buddypress div.item-list-tabs ul li.last select {
+  max-width: 175px; }
+
+#buddypress div.item-list-tabs ul li a, #buddypress div.item-list-tabs ul li span {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none; }
+
+#buddypress div.item-list-tabs ul li a span {
+  background: #eee;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #999;
+  display: inline;
+  font-size: 70%;
+  margin-left: 2px;
+  padding: 3px 6px;
+  text-align: center;
+  vertical-align: middle; }
+
+#buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
+  background-color: #eee;
+  color: #555;
+  opacity: 0.8;
+  font-weight: bold; }
+
+#buddypress div.item-list-tabs ul li.selected a span, #buddypress div.item-list-tabs ul li.current a span, #buddypress div.item-list-tabs ul li a:hover span {
+  background-color: #eee; }
+
+#buddypress div.item-list-tabs ul li.selected a span, #buddypress div.item-list-tabs ul li.current a span {
+  background-color: #fff; }
+
+#buddypress div#item-nav ul li.loading a {
+  background-position: 88% 50%; }
+
+#buddypress div.item-list-tabs#object-nav {
+  margin-top: 0; }
+
+#buddypress div.item-list-tabs#subnav {
+  background: transparent;
+  margin: 10px 0 10px;
+  overflow: hidden; }
+
+#buddypress #admins-list li, #buddypress #mods-list li, #buddypress #members-list li {
+  overflow: auto;
+  list-style: none; }
+
+/*--------------------------------------------------------------
+3.9 - Private Messaging Threads
+--------------------------------------------------------------*/
+#buddypress table#message-threads tr.unread td {
+  background: #fff9db;
+  border-top: 1px solid #ffe8c4;
+  border-bottom: 1px solid #ffe8c4;
+  font-weight: bold; }
+
+#buddypress li span.unread-count, #buddypress tr.unread span.unread-count {
+  background: #dd0000;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 8px; }
+
+#buddypress div.item-list-tabs ul li a span.unread-count {
+  padding: 1px 6px;
+  color: #fff; }
+
+#buddypress div.messages-options-nav {
+  background: #eee;
+  font-size: 80%;
+  margin: 0;
+  padding: 5px 15px;
+  text-align: right; }
+
+#buddypress div#message-thread div.message-box {
+  margin: 0;
+  padding: 15px; }
+
+#buddypress div#message-thread div.alt {
+  background: #f4f4f4; }
+
+#buddypress div#message-thread p#message-recipients {
+  margin: 10px 0 20px 0; }
+
+#buddypress div#message-thread img.avatar {
+  float: left;
+  margin: 0 10px 0 0;
+  vertical-align: middle; }
+
+#buddypress div#message-thread strong {
+  font-size: 100%;
+  margin: 0; }
+
+#buddypress div#message-thread strong a {
+  text-decoration: none; }
+
+#buddypress div#message-thread strong span.activity {
+  margin-top: 4px; }
+
+#buddypress div#message-thread div.message-metadata {
+  overflow: hidden; }
+
+#buddypress div#message-thread div.message-content {
+  margin-left: 45px; }
+
+#buddypress div#message-thread div.message-options {
+  text-align: right; }
+
+#buddypress #message-threads img.avatar {
+  max-width: none; }
+
+#buddypress div.message-search {
+  float: right;
+  margin: 0 20px; }
+
+/*--------------------------------------------------------------
+3.10 - Extended Profiles
+--------------------------------------------------------------*/
+#buddypress div.profile h4 {
+  margin-bottom: auto;
+  margin-top: 15px; }
+
+#buddypress #profile-edit-form ul.button-nav {
+  margin-top: 15px; }
+
+body.no-js #buddypress .field-visibility-settings-toggle, body.no-js #buddypress .field-visibility-settings-close {
+  display: none; }
+
+#buddypress .field-visibility-settings {
+  display: none;
+  margin-top: 10px; }
+
+body.no-js #buddypress .field-visibility-settings {
+  display: block; }
+
+#buddypress .current-visibility-level {
+  font-weight: bold;
+  font-style: normal; }
+
+#buddypress .field-visibility-settings, #buddypress .field-visibility-settings-toggle, #buddypress .field-visibility-settings-notoggle {
+  color: #888; }
+
+#buddypress .field-visibility-settings-toggle a, #buddypress .field-visibility-settings a {
+  font-size: 80%; }
+
+body.register #buddypress div.page ul {
+  list-style: none; }
+
+#buddypress .standard-form .field-visibility-settings label {
+  margin: 0;
+  font-weight: normal; }
+
+#buddypress .field-visibility-settings legend, #buddypress .field-visibility-settings-toggle {
+  font-style: italic; }
+
+#buddypress .field-visibility-settings .radio {
+  list-style: none;
+  margin-bottom: 0; }
+
+#buddypress .field-visibility select {
+  margin: 0; }
+
+/*--------------------------------------------------------------
+3.11 - Widgets
+--------------------------------------------------------------*/
+.widget.buddypress div.item-avatar img.avatar {
+  float: left;
+  margin: 0 10px 15px 0; }
+
+.widget.buddypress span.activity {
+  display: inline-block;
+  font-size: 80%;
+  opacity: 0.8;
+  padding: 0; }
+
+.widget.buddypress div.item-options {
+  font-size: 90%;
+  margin: 0 0 1em 0;
+  padding: 1em 0; }
+
+.widget.buddypress div.item {
+  margin: 0 0 1em 0; }
+
+.widget.buddypress div.item-meta, .widget.buddypress div.item-content {
+  font-size: 11px;
+  margin-left: 38px; }
+
+.widget.buddypress ul.item-list img.avatar {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px; }
+
+.widget.buddypress div.item-avatar img {
+  height: 40px;
+  margin: 1px;
+  width: 40px; }
+
+.widget.buddypress div.avatar-block {
+  overflow: hidden; }
+
+.widget.buddypress #bp-login-widget-form label {
+  display: block;
+  margin: 1rem 0 0.5rem; }
+
+.widget.buddypress #bp-login-widget-form #bp-login-widget-submit {
+  margin-right: 10px; }
+
+.widget.buddypress .bp-login-widget-user-avatar {
+  float: left;
+  width: 60px; }
+
+.widget.buddypress .bp-login-widget-user-links > div {
+  padding-left: 60px; }
+
+.widget.buddypress .bp-login-widget-user-links > div {
+  margin-bottom: 0.5rem; }
+
+.widget.buddypress .bp-login-widget-user-links > div.bp-login-widget-user-link a {
+  font-weight: bold; }
+
+/*--------------------------------------------------------------
+4.0 - Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+4.1 - Smartphones - landscape
+--------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  #buddypress div.dir-search {
+    float: right;
+    margin-top: -50px;
+    text-align: right; }
+  #buddypress div.dir-search input[type="text"] {
+    margin-bottom: 1em;
+    width: 50%; }
+  a.bp-title-button {
+    margin-left: 10px; }
+  #buddypress form.standard-form .main-column div.action {
+    position: relative;
+    margin-bottom: 1em; }
+  #buddypress form.standard-form .main-column ul#friend-list h4 {
+    width: 100%; } }
+
+/*--------------------------------------------------------------
+4.2 - Smartphones - portrait
+--------------------------------------------------------------*/
+@media only screen and (max-width: 320px) {
+  #buddypress div.dir-search {
+    clear: left;
+    float: left;
+    margin-top: 0;
+    text-align: left; }
+  #buddypress li#groups-order-select {
+    clear: left;
+    float: left; }
+  #buddypress ul.item-list li div.action {
+    clear: left;
+    float: left;
+    margin-top: 0;
+    margin-left: 70px;
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: left; }
+  #buddypress ul.item-list li div.item-desc {
+    clear: left;
+    float: left;
+    margin: 10px 0 0;
+    width: auto; }
+  #buddypress li div.item {
+    margin-left: 70px;
+    width: auto; }
+  #buddypress ul.item-list li div.meta {
+    margin-top: 0; }
+  #buddypress .item-desc p {
+    margin: 0 0 10px; }
+  #buddypress div.pagination .pag-count {
+    margin-left: 0; } }
+
+/*--------------------------------------------------------------
+4.2 - Smartphones - smaller screen sizes
+--------------------------------------------------------------*/
+@media only screen and (max-width: 240px) {
+  #buddypress div.dir-search {
+    float: left;
+    margin: 0; }
+  #buddypress div.dir-search input[type="text"] {
+    width: 50%; }
+  #buddypress li#groups-order-select {
+    float: left; }
+  #buddypress ul.item-list li img.avatar {
+    width: 30px;
+    height: auto; }
+  #buddypress ul.item-list li div.action, #buddypress li div.item {
+    margin-left: 45px; }
+  h1 a.bp-title-button {
+    clear: left;
+    float: left;
+    margin: 10px 0 20px; } }

@@ -9,6 +9,7 @@ function firmasite_firmasitebutton_register($plugin_array){
 	if ( ! is_admin() ) return $plugin_array;
 	global $firmasite_plugin_settings;
     $plugin_array["firmasitebutton"] = $firmasite_plugin_settings["url"] . "assets/js/firmasite-button.js";
+    $plugin_array["firmasiteicons_map"] = $firmasite_plugin_settings["font_js_url"];
     $plugin_array["firmasiteicons"] = $firmasite_plugin_settings["url"] . "assets/js/firmasite-icons.js";
    return $plugin_array;
 } 

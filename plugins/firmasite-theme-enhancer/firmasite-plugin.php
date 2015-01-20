@@ -3,7 +3,7 @@
 Plugin Name: FirmaSite Theme Enhancer
 Plugin URI: http://firmasite.com
 Description: This plugin provides new features to themes. Twitter Bootstrap design elements, custom editor buttons and more..
-Version: 1.3.1
+Version: 1.4.1
 Author: Ünsal Korkmaz
 Author URI: http://unsalkorkmaz.com
 License: GPLv3 or later
@@ -34,12 +34,14 @@ function firmasite_plugin_setup() {
 	if (!isset($firmasite_plugin_settings["url"])) $firmasite_plugin_settings["url"] = $firmasite_plugin_settings["plugin_url"] . 'theme-enhancer/';
 	if (!isset($firmasite_plugin_settings["dir"])) $firmasite_plugin_settings["dir"] = $firmasite_plugin_settings["plugin_dir"] . 'theme-enhancer/';
 	
+	
 	if (!isset($firmasite_plugin_settings["font_url"])) $firmasite_plugin_settings["font_url"] = $firmasite_plugin_settings["plugin_url"] . 'font-awesome/';
 	if (!isset($firmasite_plugin_settings["font_dir"])) $firmasite_plugin_settings["font_dir"] = $firmasite_plugin_settings["plugin_dir"] . 'font-awesome/';
 	if (!isset($firmasite_plugin_settings["font_js_url"])) $firmasite_plugin_settings["font_js_url"] = $firmasite_plugin_settings["font_url"] . 'fontawesome-webfont.js';
 	if (!isset($firmasite_plugin_settings["font_css_url"])) $firmasite_plugin_settings["font_css_url"] = $firmasite_plugin_settings["font_url"] . 'fontawesome-webfont.css';
 	if (!isset($firmasite_plugin_settings["font_name"])) $firmasite_plugin_settings["font_name"] = 'FontAwesome';
 	if (!isset($firmasite_plugin_settings["font_id"])) $firmasite_plugin_settings["font_id"] = 'fontawesome-webfont';
+	if (!isset($firmasite_plugin_settings["font_selector"])) $firmasite_plugin_settings["font_selector"] = '[class^="icon-"],[class*=" icon-"]';
 
 	
 	/*
@@ -47,7 +49,7 @@ function firmasite_plugin_setup() {
 	 */
 	if ( defined('FIRMASITE_CDN') && FIRMASITE_CDN && defined('FIRMASITE_POWEREDBY') ) {
 		// Font awesome
-		$firmasite_plugin_settings["font_css_url"] = "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=3.6";
+		//$firmasite_plugin_settings["font_css_url"] = "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css?ver=3.6";
 			
 		// We dont want thumbnails to show from cdn
 		$firmasite_settings["thumbnail_url"] = $firmasite_settings["styles_url"];
@@ -103,7 +105,7 @@ function firmasite_plugin_setup() {
 		.firmasite-modal-static .modal-body.alert{margin-bottom:0}
 
 		/* Tinymce Bootstrap Fixes for wp-admin */
-		body.mceContentBody { margin:10px!important;padding:10px!important;border:none!important }
+		body.mceContentBody { margin:0!important;padding:10px!important;border:none!important }
 		</style>
         <?php
 		}
@@ -147,6 +149,7 @@ function firmasite_plugin_setup() {
 			
 	}
 	
+	add_action('admin_enqueue_scripts', "firmasite_plugin_enqueue_fontcss", 999 );
 	add_action('wp_enqueue_scripts', "firmasite_plugin_enqueue_fontcss", 11 );
 	function firmasite_plugin_enqueue_fontcss() {
 		global $firmasite_plugin_settings;
@@ -154,10 +157,38 @@ function firmasite_plugin_setup() {
 		wp_register_style( 'firmasite_plugin_fontcss', $firmasite_plugin_settings["font_css_url"] );
 		wp_enqueue_style( 'firmasite_plugin_fontcss' );
 	}
+	// tinymce font-family:inherit fix
+	add_action("admin_head", "firmasite_plugin_admin_custom_css");
+	function firmasite_plugin_admin_custom_css(){
+		global $firmasite_plugin_settings;
+		?>
+		<style type="text/css">	
+		.mce-container <?php echo $firmasite_plugin_settings["font_selector"]; ?> {
+			font-family:'<?php echo $firmasite_plugin_settings["font_name"]; ?>';
+		}
+		</style>
+		<?php
+	}
 	
 	require_once ($firmasite_plugin_settings["dir"] . 'functions/tinymce-buttons.php');			// Tinymce buttons
 }
 
+
+// Allow html tags in textarea
+add_filter( 'bp_get_the_profile_field_edit_value', 'firmasite_bp_textarea_allowedtags', 1, 2 );
+function firmasite_bp_textarea_allowedtags($field_value, $field_type){
+	if ("textarea" == $field_type) {
+		remove_filter( 'bp_get_the_profile_field_edit_value',      'esc_html' );
+	}
+	return $field_value;
+}
+add_filter( 'bp_get_the_profile_field_value', 'firmasite_bp_textarea_allowedtags_show', 1, 2 );
+function firmasite_bp_textarea_allowedtags_show($field_value, $field_type){
+	if ("textarea" == $field_type) {
+		remove_filter( 'bp_get_the_profile_field_value',           'esc_html',        8 );
+	}
+	return $field_value;
+}
 
 	
 
