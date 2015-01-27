@@ -22,13 +22,14 @@ get_header(); ?>
 	<?php get_sidebar(); ?>	
 	<section id="primary" class="content-area col-md-9">
 	<main id="main" class="site-main" role="main">
+	
+
 	<!-- START TOP CAROUSEL PRC 1.13.15 -->
 	<?php 
 	 $number = 0; 
-	 query_posts('posts_per_page=5'); 
+	 query_posts(array('cat=4'),('posts_per_page=5')); 
 	 if(have_posts()):  
 	?>	
-	
 		<div class="">
 			<div class="slide-nav">
 				<ol class="carousel-indicators">
@@ -52,19 +53,31 @@ get_header(); ?>
 				  <div class="carousel-inner">
 				    <?php while(have_posts()): the_post(); ?>
 				    <div class="item">
-				      <div class="column-first carousel-image col-md-8">
-				      	<div>
-				      		<?php the_post_thumbnail('large'); ?>
-				      	</div>
-				      </div>
-				      <div class="col-md-4">
-				        <h3><?php the_title(); ?></h3>
-				        <div class="byline">
-					        <span>by <?php the_author(); ?></span>
-					      	<span><?php the_time('F jS, Y'); ?></span>
-				      	</div>
-				        <?php the_excerpt(); ?>
-				      </div>
+				    <div class="col-md-12">
+				    	<h3><?php the_title(); ?></h3>
+						<div class="byline">
+						    <span>by <?php the_author(); ?></span>
+						  	<span><?php the_time('F jS, Y'); ?></span>
+						</div>				    	
+				    </div>
+				    <!-- CHECK IF POST HAS THUMBNAIL -->
+				    <?php if ( has_post_thumbnail() ): ?>
+					<div class="column-first carousel-image col-md-12">
+						<div>
+							<div class="image-container">
+								<?php the_post_thumbnail('large'); ?>
+							</div>
+							<div class="text-overlay">
+								<?php the_excerpt(); ?>
+							</div>
+						</div>
+					</div>
+					<!-- IF POST DOESN"T HAVE A THUMBNAIL  -->
+			    	<?php else: ?>
+						<div class="col-md-10">
+							<?php the_excerpt(); ?>
+						</div>
+						<?php endif; ?>				      
 				    </div>
 				    <?php endwhile; ?>
 				  </div>
@@ -87,7 +100,7 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?> 
 				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to override this in a child theme, then include a file
