@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: Active Directory Integration 
-Version: 1.1.5
+Plugin Name: Active Directory Integration - Customized!
+Version: 10.1.5-custom
 Plugin URI: http://www.steindorff.de/wp-ad-integration
 Description: Allows WordPress to authenticate, authorize, create and update users through Active Directory
 Author: Christoph Steindorff
@@ -402,6 +402,8 @@ class ADIntegrationPlugin {
 		if ($this->_show_attributes) {
 			add_action( 'edit_user_profile', array(&$this, 'show_AD_attributes'));
 			add_action( 'show_user_profile', array(&$this, 'show_AD_attributes'));
+			// PRC Added This
+			add_action( 'bp_after_profile_loop_content', array(&$this, 'show_AD_attributes') );
 		}
 		
 		$this->_all_user_attributes = $this->_get_user_attributes();
@@ -1100,9 +1102,15 @@ class ADIntegrationPlugin {
 	 * Show defined AD attributes on profile page
 	 */
 	public function show_AD_attributes($user) {
-		
-		global $user_ID;
-		
+		// PRC Added $bp to global
+		global $user_ID, $bp;
+		// PRC updated $user_ID, set $user object (since it's not passed by buddypress)
+		if(! $user):
+			$user_ID = $bp->displayed_user->id;
+			$user = get_user_by('id', $user_ID);
+			// END PRC
+		endif;
+
 		// Load up the localization file if we're using WordPress in a different language
 		// Place it in this plugin's folder and name it "ad-integration-[value in wp-config].mo"
 		load_plugin_textdomain( 'ad-integration', false, dirname( plugin_basename( __FILE__ ) ) );
@@ -1127,7 +1135,8 @@ class ADIntegrationPlugin {
 
 			if (count($attributes) > 0) {
 				wp_nonce_field('ADI_UserProfileUpdate','ADI_UserProfileUpdate_NONCE');
-				echo '<h3>' . __('Additional Informations', 'ad-integration').'</h3>';
+				// PRC Removing this
+				// echo '<h3>' . __('Additional Information', 'ad-integration').'</h3>';
 				
 				$adi_samaccountname = get_user_meta($user->ID, 'adi_samaccountname', true); 
 				?>
