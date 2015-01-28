@@ -11,21 +11,23 @@
 		<!-- PRC TOOLS AND CONTENT MENU 1.13.15 --> 
 		<div class="actions-menus">
 			<div class="dropdown">
-			  <a href="#" class="toggle">
-			    <i class="fa fa-cog"></i> My Tools 
-			    <span class="caret"></span>
-			  </a>
+				<h4>
+					<a href="#" class="toggle">
+				    <i class="fa fa-cog"></i> My Tools 
+				    <span class="caret"></span>
+				  </a>
+				</h4>
 				<?php wp_nav_menu( array( 'theme_location' => 'tools-menu' )); ?> 			  
 			</div>
 
-			<div class="dropdown">
+<!-- 			<div class="dropdown">
 			  <a href="#" class="toggle">
 			    <i class="fa fa-flag"></i> Featured Content 
 			    <span class="caret"></span>
 			  </a>
 				<?php wp_nav_menu( array( 'theme_location' => 'featured-menu' )); ?> 
 			</div>
-		</div>
+		</div> -->
 		<!-- END TOOLS AND CONTENT MENU -->		
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'Sidebar' ) ) : ?>

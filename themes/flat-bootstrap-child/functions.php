@@ -101,9 +101,9 @@ function register_tools_menu() {
   	register_nav_menu('tools-menu',__( 'Tools Menu' ));
 }
 
-function register_featured_content_menu() {
-	register_nav_menu('featured-menu',__( 'Featured Content Menu' ));	
-}
+// function register_featured_content_menu() {
+// 	register_nav_menu('featured-menu',__( 'Featured Content Menu' ));	
+// }
 
 function prc_scripts() {
 	wp_enqueue_script( 'script-name', get_template_directory_uri() . '-child/js/prc_scripts.js', array(), '1.0.0', true );
@@ -121,7 +121,7 @@ function coa_login_logo() { ?>
 add_action( 'login_enqueue_scripts', 'coa_login_logo' );
 add_action( 'wp_enqueue_scripts', 'prc_scripts' );
 add_action( 'init', 'register_tools_menu' );
-add_action( 'init', 'register_featured_content_menu' );
+// add_action( 'init', 'register_featured_content_menu' );
 
 
 
