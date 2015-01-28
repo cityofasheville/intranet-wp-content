@@ -11,12 +11,10 @@
 		<!-- PRC TOOLS AND CONTENT MENU 1.13.15 --> 
 		<div class="actions-menus">
 			<div class="dropdown">
-				<h4>
-					<a href="#" class="toggle">
-				    <i class="fa fa-cog"></i> My Tools 
-				    <span class="caret"></span>
-				  </a>
-				</h4>
+			  <a href="#" class="toggle">
+			    <i class="fa fa-cog"></i> My Tools 
+			    <span class="caret"></span>
+			  </a>
 				<?php wp_nav_menu( array( 'theme_location' => 'tools-menu' )); ?> 			  
 			</div>
 
