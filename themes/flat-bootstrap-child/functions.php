@@ -109,6 +109,16 @@ function prc_scripts() {
 	wp_enqueue_script( 'script-name', get_template_directory_uri() . '-child/js/prc_scripts.js', array(), '1.0.0', true );
 }
 
+function coa_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/citylogo_flatblue.png);
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+
+add_action( 'login_enqueue_scripts', 'coa_login_logo' );
 add_action( 'wp_enqueue_scripts', 'prc_scripts' );
 add_action( 'init', 'register_tools_menu' );
 add_action( 'init', 'register_featured_content_menu' );
