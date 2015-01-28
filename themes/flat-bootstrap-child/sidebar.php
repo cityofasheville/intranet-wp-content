@@ -20,14 +20,8 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'tools-menu' )); ?> 			  
 			</div>
 
-<!-- 			<div class="dropdown">
-			  <a href="#" class="toggle">
-			    <i class="fa fa-flag"></i> Featured Content 
-			    <span class="caret"></span>
-			  </a>
-				<?php wp_nav_menu( array( 'theme_location' => 'featured-menu' )); ?> 
-			</div>
-		</div> -->
+
+		</div>
 		<!-- END TOOLS AND CONTENT MENU -->		
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'Sidebar' ) ) : ?>
