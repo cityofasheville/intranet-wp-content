@@ -12,8 +12,11 @@
 		<div class="actions-menus">
 			<div class="dropdown">
 			  <a href="#" class="toggle">
-			    <i class="fa fa-cog"></i> My Tools 
-			    <span class="caret"></span>
+			  	<h4>
+			  		<i class="fa fa-cog"></i> My Tools 
+			    	<span class="caret"></span>
+			  	</h4>
+			    
 			  </a>
 				<?php wp_nav_menu( array( 'theme_location' => 'tools-menu' )); ?> 			  
 			</div>
